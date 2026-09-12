@@ -35,31 +35,48 @@ CAPITAL_RE = re.compile(
     re.I,
 )
 
+# Districts carry exactly the same hazard one level down: two headquarters for
+# one district is as unresolvable as two capitals for one state.
+HQ_RE = re.compile(
+    r"^(?P<hq>[^,.]+?) is the administrative headquarters of (?P<place>[^,]+)",
+    re.I,
+)
 
-def extract_capital_claims(docs: Dict[str, str]) -> Dict[str, List[Tuple[str, str]]]:
-    """place -> [(capital, doc_id)]. Only single-capital assertions are parsed;
-    a document that says "A and B are both recorded as capitals" deliberately
-    makes no exclusive claim and so cannot contradict anything."""
+
+def _extract(docs: Dict[str, str], rx, subject: str) -> Dict[str, List[Tuple[str, str]]]:
+    """place -> [(subject_value, doc_id)]. Only EXCLUSIVE assertions are parsed;
+    a document saying "A and B are both recorded as..." deliberately makes no
+    exclusive claim and so cannot contradict anything."""
     out: Dict[str, List[Tuple[str, str]]] = defaultdict(list)
     for doc_id, text in docs.items():
-        m = CAPITAL_RE.match(text.strip())
+        m = rx.match(text.strip())
         if not m:
             continue
-        cap = m.group("cap").strip()
+        val = m.group(subject).strip()
         place = m.group("place").strip().rstrip(".")
-        out[place.lower()].append((cap, doc_id))
+        out[place.lower()].append((val, doc_id))
     return out
+
+
+def extract_capital_claims(docs: Dict[str, str]) -> Dict[str, List[Tuple[str, str]]]:
+    return _extract(docs, CAPITAL_RE, "cap")
+
+
+def extract_hq_claims(docs: Dict[str, str]) -> Dict[str, List[Tuple[str, str]]]:
+    return _extract(docs, HQ_RE, "hq")
 
 
 def validate(docs: Dict[str, str]) -> dict:
     problems: List[str] = []
 
     claims = extract_capital_claims(docs)
-    for place, entries in sorted(claims.items()):
-        distinct = {c for c, _ in entries}
-        if len(distinct) > 1:
-            where = ", ".join(f"{c} ({d})" for c, d in entries)
-            problems.append(f"contradiction: {place} has capitals -> {where}")
+    hq_claims = extract_hq_claims(docs)
+    for label, group in (("capitals", claims), ("headquarters", hq_claims)):
+        for place, entries in sorted(group.items()):
+            distinct = {c for c, _ in entries}
+            if len(distinct) > 1:
+                where = ", ".join(f"{c} ({d})" for c, d in entries)
+                problems.append(f"contradiction: {place} has {label} -> {where}")
 
     # A state described as a city means the type constraint let an administrative
     # entity through the city query.
@@ -79,7 +96,8 @@ def validate(docs: Dict[str, str]) -> dict:
             problems.append(f"duplicate: {doc_id} repeats {seen[key]}")
         seen[key] = doc_id
 
-    return {"docs": len(docs), "claims": len(claims), "problems": problems}
+    return {"docs": len(docs), "claims": len(claims),
+            "hq_claims": len(hq_claims), "problems": problems}
 
 
 def main() -> int:
@@ -88,7 +106,8 @@ def main() -> int:
     docs = {k: (v["text"] if isinstance(v, dict) else v)
             for k, v in raw.get("docs", {}).items()}
     rep = validate(docs)
-    print(f"{path}: {rep['docs']} documents, {rep['claims']} capital claims")
+    print(f"{path}: {rep['docs']} documents, {rep['claims']} capital claims, "
+          f"{rep['hq_claims']} headquarters claims")
     if rep["problems"]:
         for p in rep["problems"]:
             print(f"  FAIL  {p}")

@@ -47,10 +47,34 @@ def test_long_document_does_not_outrank_short_exact_answer():
 
 def test_conciseness_is_never_penalised():
     """Only documents LONGER than average are discounted. A short document must
-    score its full recall, or the fix would trade one ranking bias for another."""
+    never score BELOW its recall, or the fix would trade one ranking bias for
+    another. It may score above it - adjacency and subject boosts are additive."""
     short = "Dispur is the capital of Assam."
     q = "capital of Assam"
-    assert K.rank_score(q, short) == pytest.approx(K.score(q, short))
+    assert K.rank_score(q, short) >= K.score(q, short)
+
+
+def test_word_order_separates_identical_bags_of_words():
+    """"what is the capital of India" reduces to {capital, india}, so all 28
+    "X is the capital of Y, a state of India" documents scored a perfect 1.000
+    and the right answer was chosen by tie-break. Adjacency is what distinguishes
+    them: "capital india" is contiguous in one and not the other."""
+    right = "New Delhi is the capital of India and the seat of the national government."
+    wrong = "Itanagar is the capital of Arunachal Pradesh, a state of India."
+    q = "what is the capital of India?"
+    assert K.score(q, right) == pytest.approx(K.score(q, wrong))   # identical bags
+    assert K.rank_score(q, right) > K.rank_score(q, wrong)         # order breaks the tie
+
+
+def test_a_common_word_cannot_buy_a_subject_boost():
+    """The subject boost was first written as a raw term count, so "capital"
+    covering 1 of 4 words in "Itanagar Capital Complex district" earned a boost
+    and outranked the right answer. IDF weighting makes a common word worth
+    almost nothing."""
+    q = "what is the capital of India?"
+    decoy = "Itanagar Capital Complex district is a district of Arunachal Pradesh, India."
+    right = "New Delhi is the capital of India and the seat of the national government."
+    assert K.rank_score(q, right) > K.rank_score(q, decoy)
 
 
 def test_abstention_uses_recall_not_the_ranked_score():

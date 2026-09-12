@@ -38,7 +38,7 @@ WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/"
 
 # Q12443800 = state of India, Q2072238 = union territory of India
 SPARQL_ADMIN = """
-SELECT ?kindLabel ?placeLabel ?capitalLabel WHERE {
+SELECT ?place ?kindLabel ?placeLabel ?capitalLabel WHERE {
   VALUES ?kind { wd:Q12443800 wd:Q2072238 }
   ?place wdt:P31 ?kind ; wdt:P36 ?capital .
   FILTER NOT EXISTS { ?place wdt:P576 ?dissolved . }
@@ -72,6 +72,22 @@ SELECT DISTINCT ?cityLabel ?pop WHERE {
 }
 ORDER BY DESC(?pop)
 LIMIT 80
+"""
+
+# Districts are the layer people actually ask about ("which district is X in",
+# "what is the headquarters of Y district") and the layer the state/capital query
+# cannot reach. Unlike the city query this one CAN join to a state cheaply,
+# because a district's P131 parent IS the state - no transitive walk, no 504.
+SPARQL_DISTRICTS = """
+SELECT DISTINCT ?districtLabel ?stateLabel ?hqLabel WHERE {
+  ?district wdt:P31 wd:Q1149652 ; wdt:P131 ?state .
+  ?state wdt:P31 ?skind . VALUES ?skind { wd:Q12443800 wd:Q2072238 }
+  FILTER NOT EXISTS { ?district wdt:P576 ?d . }
+  FILTER NOT EXISTS { ?state wdt:P576 ?sd . }
+  OPTIONAL { ?district wdt:P36 ?hq . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY ?stateLabel ?districtLabel
 """
 
 # Topics worth a prose summary: national context a news assistant is asked about.
@@ -112,9 +128,10 @@ def main():
     docs: Dict[str, dict] = {}
 
     # ---- structured: states, union territories and their capitals ----
-    print("[1/3] Wikidata: states and union territories")
+    print("[1/4] Wikidata: states and union territories")
     caps: Dict[str, list] = {}
     kinds: Dict[str, str] = {}
+    uris: Dict[str, str] = {}
     for row in sparql(SPARQL_ADMIN):
         place = row["placeLabel"]["value"]
         cap = row["capitalLabel"]["value"]
@@ -129,6 +146,10 @@ def main():
         if place.endswith(" State") and place not in ("Telangana State",):
             continue
         kinds[place] = kind
+        # Keep the entity URI. Special:EntityPage takes a Q-id, so building the
+        # link from the LABEL produced dead URLs with raw spaces in them
+        # ("Special:EntityPage/Andhra Pradesh") in a field meant for citation.
+        uris.setdefault(place, row["place"]["value"])
         if cap not in caps.setdefault(place, []):
             caps[place].append(cap)
 
@@ -151,7 +172,7 @@ def main():
                     f"a {kind_phrase}.")
         docs[key] = {
             "text": text,
-            "source": f"https://www.wikidata.org/wiki/Special:EntityPage/{place}",
+            "source": uris.get(place, "https://www.wikidata.org/"),
             "kind": "structured",
         }
     print(f"      {len(caps)} states/UTs with capitals ({multi} with more than one)")
@@ -159,7 +180,7 @@ def main():
     # ---- structured: large cities ----
     # Each stage is independent: a public SPARQL endpoint returning 504 should
     # cost us one section, not the whole build.
-    print("[2/3] Wikidata: large cities")
+    print("[2/4] Wikidata: large cities")
     try:
         city_rows = sparql(SPARQL_BIG_CITIES)
     except Exception as e:
@@ -185,9 +206,57 @@ def main():
         }
     print(f"      {len(best)} cities (deduplicated from {len(city_rows)} rows)")
 
+    # ---- structured: districts and their headquarters ----
+    print("[3/4] Wikidata: districts")
+    try:
+        dist_rows = sparql(SPARQL_DISTRICTS)
+    except Exception as e:
+        print(f"      SKIPPED ({type(e).__name__}: {str(e)[:60]})")
+        dist_rows = []
+
+    # Same shape of problem as the state capitals: Annamayya district comes back
+    # with two headquarters (Madanapalle and Rayachoti) and nothing distinguishes
+    # them. Group first, decide once, never emit two contradicting sentences.
+    dhq: Dict[tuple, list] = {}
+    for row in dist_rows:
+        name = row["districtLabel"]["value"]
+        state = row["stateLabel"]["value"]
+        if name.startswith("Q") or state.startswith("Q"):
+            continue
+        if "(" in name and any(ch.isdigit() for ch in name):
+            continue
+        name = " ".join(name.split())          # "YSR  Kadapa district" -> single spaces
+        hq = row.get("hqLabel", {}).get("value")
+        entry = dhq.setdefault((name, state), [])
+        if hq and not hq.startswith("Q") and hq not in entry:
+            entry.append(hq)
+
+    n_hq = n_multi = 0
+    for (name, state), hqs in sorted(dhq.items()):
+        label = name if name.lower().endswith("district") else f"{name} district"
+        key = f"dis_{len(docs):04d}"
+        if len(hqs) == 1:
+            text = (f"{hqs[0]} is the administrative headquarters of {label}, "
+                    f"in {state}, India.")
+            n_hq += 1
+        elif len(hqs) > 1:
+            n_multi += 1
+            text = (f"{' and '.join(hqs)} are both recorded as the administrative "
+                    f"headquarters of {label}, in {state}, India.")
+        else:
+            text = f"{label} is a district of {state}, India."
+        docs[key] = {
+            "text": text,
+            "source": "https://www.wikidata.org/",
+            "kind": "structured",
+        }
+    print(f"      {len(dhq)} districts across "
+          f"{len({st for _, st in dhq})} states/UTs "
+          f"({n_hq} with a headquarters, {n_multi} with more than one)")
+
     # ---- prose: Wikipedia summaries ----
     if not args.skip_summaries:
-        print(f"[3/3] Wikipedia summaries for {len(SUMMARY_TOPICS)} topics")
+        print(f"[4/4] Wikipedia summaries for {len(SUMMARY_TOPICS)} topics")
         got = 0
         for t in SUMMARY_TOPICS:
             s = wiki_summary(t)

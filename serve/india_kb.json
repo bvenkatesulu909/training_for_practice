@@ -1,145 +1,145 @@
 {
  "built": "2026-09-12",
- "count": 109,
+ "count": 370,
  "docs": {
   "adm_0000": {
    "text": "Amaravati is the capital of Andhra Pradesh, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Andhra Pradesh",
+   "source": "http://www.wikidata.org/entity/Q1159",
    "kind": "structured"
   },
   "adm_0001": {
    "text": "Itanagar is the capital of Arunachal Pradesh, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Arunachal Pradesh",
+   "source": "http://www.wikidata.org/entity/Q1162",
    "kind": "structured"
   },
   "adm_0002": {
    "text": "Dispur is the capital of Assam, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Assam",
+   "source": "http://www.wikidata.org/entity/Q1164",
    "kind": "structured"
   },
   "adm_0003": {
    "text": "Patna is the capital of Bihar, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Bihar",
+   "source": "http://www.wikidata.org/entity/Q1165",
    "kind": "structured"
   },
   "adm_0004": {
    "text": "Raipur is the capital of Chhattisgarh, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Chhattisgarh",
+   "source": "http://www.wikidata.org/entity/Q1168",
    "kind": "structured"
   },
   "adm_0005": {
    "text": "Panaji is the capital of Goa, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Goa",
+   "source": "http://www.wikidata.org/entity/Q1171",
    "kind": "structured"
   },
   "adm_0006": {
    "text": "Gandhinagar is the capital of Gujarat, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Gujarat",
+   "source": "http://www.wikidata.org/entity/Q1061",
    "kind": "structured"
   },
   "adm_0007": {
    "text": "Chandigarh is the capital of Haryana, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Haryana",
+   "source": "http://www.wikidata.org/entity/Q1174",
    "kind": "structured"
   },
   "adm_0008": {
    "text": "Shimla is the capital of Himachal Pradesh, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Himachal Pradesh",
+   "source": "http://www.wikidata.org/entity/Q1177",
    "kind": "structured"
   },
   "adm_0009": {
    "text": "Ranchi is the capital of Jharkhand, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Jharkhand",
+   "source": "http://www.wikidata.org/entity/Q1184",
    "kind": "structured"
   },
   "adm_0010": {
    "text": "Belgaum and Bengaluru are both recorded as capitals of Karnataka, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Karnataka",
+   "source": "http://www.wikidata.org/entity/Q1185",
    "kind": "structured"
   },
   "adm_0011": {
    "text": "Thiruvananthapuram is the capital of Kerala, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Kerala",
+   "source": "http://www.wikidata.org/entity/Q1186",
    "kind": "structured"
   },
   "adm_0012": {
    "text": "Bhopal is the capital of Madhya Pradesh, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Madhya Pradesh",
+   "source": "http://www.wikidata.org/entity/Q1188",
    "kind": "structured"
   },
   "adm_0013": {
    "text": "Mumbai and Nagpur are both recorded as capitals of Maharashtra, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Maharashtra",
+   "source": "http://www.wikidata.org/entity/Q1191",
    "kind": "structured"
   },
   "adm_0014": {
    "text": "Imphal is the capital of Manipur, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Manipur",
+   "source": "http://www.wikidata.org/entity/Q1193",
    "kind": "structured"
   },
   "adm_0015": {
    "text": "Shillong is the capital of Meghalaya, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Meghalaya",
+   "source": "http://www.wikidata.org/entity/Q1195",
    "kind": "structured"
   },
   "adm_0016": {
    "text": "Aizawl is the capital of Mizoram, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Mizoram",
+   "source": "http://www.wikidata.org/entity/Q1502",
    "kind": "structured"
   },
   "adm_0017": {
    "text": "Kohima is the capital of Nagaland, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Nagaland",
+   "source": "http://www.wikidata.org/entity/Q1599",
    "kind": "structured"
   },
   "adm_0018": {
    "text": "Bhubaneswar is the capital of Odisha, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Odisha",
+   "source": "http://www.wikidata.org/entity/Q22048",
    "kind": "structured"
   },
   "adm_0019": {
    "text": "Chandigarh is the capital of Punjab, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Punjab",
+   "source": "http://www.wikidata.org/entity/Q22424",
    "kind": "structured"
   },
   "adm_0020": {
    "text": "Jaipur is the capital of Rajasthan, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Rajasthan",
+   "source": "http://www.wikidata.org/entity/Q1437",
    "kind": "structured"
   },
   "adm_0021": {
    "text": "Gangtok is the capital of Sikkim, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Sikkim",
+   "source": "http://www.wikidata.org/entity/Q1505",
    "kind": "structured"
   },
   "adm_0022": {
    "text": "Chennai is the capital of Tamil Nadu, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Tamil Nadu",
+   "source": "http://www.wikidata.org/entity/Q1445",
    "kind": "structured"
   },
   "adm_0023": {
    "text": "Hyderabad is the capital of Telangana, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Telangana",
+   "source": "http://www.wikidata.org/entity/Q677037",
    "kind": "structured"
   },
   "adm_0024": {
    "text": "Agartala is the capital of Tripura, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Tripura",
+   "source": "http://www.wikidata.org/entity/Q1363",
    "kind": "structured"
   },
   "adm_0025": {
    "text": "Lucknow is the capital of Uttar Pradesh, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Uttar Pradesh",
+   "source": "http://www.wikidata.org/entity/Q1498",
    "kind": "structured"
   },
   "adm_0026": {
    "text": "Dehradun and Gairsain are both recorded as capitals of Uttarakhand, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Uttarakhand",
+   "source": "http://www.wikidata.org/entity/Q1499",
    "kind": "structured"
   },
   "adm_0027": {
    "text": "Kolkata is the capital of West Bengal, a state of India.",
-   "source": "https://www.wikidata.org/wiki/Special:EntityPage/West Bengal",
+   "source": "http://www.wikidata.org/entity/Q1356",
    "kind": "structured"
   },
   "cty_0028": {
@@ -387,193 +387,1498 @@
    "source": "https://www.wikidata.org/",
    "kind": "structured"
   },
-  "wik_0077": {
+  "dis_0077": {
+   "text": "Adilabad is the administrative headquarters of Adilabad district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0078": {
+   "text": "Ahmedabad is the administrative headquarters of Ahmedabad district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0079": {
+   "text": "Aizawl is the administrative headquarters of Aizawl district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0080": {
+   "text": "Alappuzha is the administrative headquarters of Alappuzha district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0081": {
+   "text": "Paderu is the administrative headquarters of Alluri Sitharama Raju district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0082": {
+   "text": "Amreli is the administrative headquarters of Amreli district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0083": {
+   "text": "Anakapalle is the administrative headquarters of Anakapalli district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0084": {
+   "text": "Anand is the administrative headquarters of Anand district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0085": {
+   "text": "Ananthapuram is the administrative headquarters of Anantapuramu district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0086": {
+   "text": "Hawai is the administrative headquarters of Anjaw district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0087": {
+   "text": "Madanapalle and Rayachoti are both recorded as the administrative headquarters of Annamayya district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0088": {
+   "text": "Modasa is the administrative headquarters of Aravalli district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0089": {
+   "text": "Ariyalur is the administrative headquarters of Ariyalur district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0090": {
+   "text": "Palanpur is the administrative headquarters of Banaskantha district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0091": {
+   "text": "Bapatla is the administrative headquarters of Bapatla district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0092": {
+   "text": "Kothagudem is the administrative headquarters of Bhadradri Kothagudem district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0093": {
+   "text": "Bharuch is the administrative headquarters of Bharuch district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0094": {
+   "text": "Bhavnagar is the administrative headquarters of Bhavnagar district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0095": {
+   "text": "Bichom district is a district of Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0096": {
+   "text": "Bilaspur, Himachal Pradesh is the administrative headquarters of Bilaspur district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0097": {
+   "text": "Bishnupur is the administrative headquarters of Bishnupur district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0098": {
+   "text": "Botad is the administrative headquarters of Botad district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0099": {
+   "text": "Chamba is the administrative headquarters of Chamba district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0100": {
+   "text": "Champhai is the administrative headquarters of Champhai district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0101": {
+   "text": "Chandel is the administrative headquarters of Chandel district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0102": {
+   "text": "Changlang is the administrative headquarters of Changlang district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0103": {
+   "text": "Chengalpattu is the administrative headquarters of Chengalpattu district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0104": {
+   "text": "Chennai is the administrative headquarters of Chennai district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0105": {
+   "text": "Chhota Udepur is the administrative headquarters of Chhota Udaipur district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0106": {
+   "text": "Chittoor is the administrative headquarters of Chittoor district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0107": {
+   "text": "Churachandpur is the administrative headquarters of Churachandpur district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0108": {
+   "text": "Chümoukedima is the administrative headquarters of Chümoukedima district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0109": {
+   "text": "Coimbatore is the administrative headquarters of Coimbatore district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0110": {
+   "text": "Cuddalore is the administrative headquarters of Cuddalore district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0111": {
+   "text": "Dahod is the administrative headquarters of Dahod district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0112": {
+   "text": "Ahwa is the administrative headquarters of Dang district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0113": {
+   "text": "Jamkhambhaliya is the administrative headquarters of Devbhumi Dwarka district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0114": {
+   "text": "Ambassa is the administrative headquarters of Dhalai district, in Tripura, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0115": {
+   "text": "Dharmapuri is the administrative headquarters of Dharmapuri district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0116": {
+   "text": "Anini is the administrative headquarters of Dibang Valley district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0117": {
+   "text": "Dimapur is the administrative headquarters of Dimapur district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0118": {
+   "text": "Dindigul is the administrative headquarters of Dindigul district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0119": {
+   "text": "Amalapuram is the administrative headquarters of Dr. B.R. Ambedkar Konaseema district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0120": {
+   "text": "Williamnagar is the administrative headquarters of East Garo Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0121": {
+   "text": "Rajahmundry is the administrative headquarters of East Godavari district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0122": {
+   "text": "Khliehriat is the administrative headquarters of East Jaintia Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0123": {
+   "text": "Seppa is the administrative headquarters of East Kameng district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0124": {
+   "text": "Shillong is the administrative headquarters of East Khasi Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0125": {
+   "text": "Pasighat is the administrative headquarters of East Siang district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0126": {
+   "text": "Mairang is the administrative headquarters of Eastern West Khasi Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0127": {
+   "text": "Eluru is the administrative headquarters of Eluru district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0128": {
+   "text": "Ernakulam is the administrative headquarters of Ernakulam district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0129": {
+   "text": "Erode is the administrative headquarters of Erode district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0130": {
+   "text": "Gandhinagar is the administrative headquarters of Gandhinagar district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0131": {
+   "text": "Gangtok is the administrative headquarters of Gangtok district, in Sikkim, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0132": {
+   "text": "Veraval is the administrative headquarters of Gir Somnath district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0133": {
+   "text": "Udaipur is the administrative headquarters of Gomati district, in Tripura, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0134": {
+   "text": "Guntur is the administrative headquarters of Guntur district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0135": {
+   "text": "Gyalshing is the administrative headquarters of Gyalshing district, in Sikkim, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0136": {
+   "text": "Hamirpur is the administrative headquarters of Hamirpur district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0137": {
+   "text": "Warangal is the administrative headquarters of Hanamkonda district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0138": {
+   "text": "Hnahthial is the administrative headquarters of Hnahthial district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0139": {
+   "text": "Hyderabad is the administrative headquarters of Hyderabad district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0140": {
+   "text": "Painavu is the administrative headquarters of Idukki district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0141": {
+   "text": "Porompat is the administrative headquarters of Imphal East district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0142": {
+   "text": "Lamphelpat is the administrative headquarters of Imphal West district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0143": {
+   "text": "Itanagar Capital Complex district is a district of Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0144": {
+   "text": "Jagtial is the administrative headquarters of Jagtial district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0145": {
+   "text": "Jamnagar is the administrative headquarters of Jamnagar district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0146": {
+   "text": "Jangaon is the administrative headquarters of Jangaon district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0147": {
+   "text": "Bhupalapally is the administrative headquarters of Jayashankar Bhupalpally district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0148": {
+   "text": "Jiribam is the administrative headquarters of Jiribam district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0149": {
+   "text": "Gadwal is the administrative headquarters of Jogulamba Gadwal district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0150": {
+   "text": "Junagadh is the administrative headquarters of Junagadh district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0151": {
+   "text": "Kakching is the administrative headquarters of Kakching district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0152": {
+   "text": "Kakinada is the administrative headquarters of Kakinada district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0153": {
+   "text": "Kallakurichi is the administrative headquarters of Kallakurichi district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0154": {
+   "text": "Kamareddy is the administrative headquarters of Kamareddy district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0155": {
+   "text": "Kamjong is the administrative headquarters of Kamjong district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0156": {
+   "text": "Kamle district is a district of Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0157": {
+   "text": "Kanchipuram is the administrative headquarters of Kanchipuram district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0158": {
+   "text": "Kangpokpi is the administrative headquarters of Kangpokpi District, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0159": {
+   "text": "Dharamshala is the administrative headquarters of Kangra district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0160": {
+   "text": "Nagercoil is the administrative headquarters of Kanniyakumari district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0161": {
+   "text": "Kannur is the administrative headquarters of Kannur district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0162": {
+   "text": "Karimnagar is the administrative headquarters of Karimnagar district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0163": {
+   "text": "Karur is the administrative headquarters of Karur district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0164": {
+   "text": "Kasaragod is the administrative headquarters of Kasaragod district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0165": {
+   "text": "Keyi Panyor district is a district of Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0166": {
+   "text": "Khammam is the administrative headquarters of Khammam district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0167": {
+   "text": "Khawzawl is the administrative headquarters of Khawzawl district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0168": {
+   "text": "Kheda is the administrative headquarters of Kheda district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0169": {
+   "text": "Khowai is the administrative headquarters of Khowai district, in Tripura, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0170": {
+   "text": "Reckong Peo is the administrative headquarters of Kinnaur district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0171": {
+   "text": "Kiphire is the administrative headquarters of Kiphire district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0172": {
+   "text": "Kohima is the administrative headquarters of Kohima district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0173": {
+   "text": "Kolasib is the administrative headquarters of Kolasib district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0174": {
+   "text": "Kollam is the administrative headquarters of Kollam district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0175": {
+   "text": "Kottayam is the administrative headquarters of Kottayam district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0176": {
+   "text": "Kozhikode is the administrative headquarters of Kozhikode district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0177": {
+   "text": "Palin is the administrative headquarters of Kra Daadi district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0178": {
+   "text": "Machilipatnam is the administrative headquarters of Krishna district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0179": {
+   "text": "Krishnagiri is the administrative headquarters of Krishnagiri district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0180": {
+   "text": "Kullu is the administrative headquarters of Kullu district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0181": {
+   "text": "Asifabad is the administrative headquarters of Kumaram Bheem Asifabad district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0182": {
+   "text": "Kurnool is the administrative headquarters of Kurnool district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0183": {
+   "text": "Koloriang is the administrative headquarters of Kurung Kumey district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0184": {
+   "text": "Bhuj is the administrative headquarters of Kutch district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0185": {
+   "text": "Kyelang is the administrative headquarters of Lahaul and Spiti district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0186": {
+   "text": "Lawngtlai is the administrative headquarters of Lawngtlai district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0187": {
+   "text": "Basar is the administrative headquarters of Lepa Rada district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0188": {
+   "text": "Tezu is the administrative headquarters of Lohit district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0189": {
+   "text": "Longding district is a district of Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0190": {
+   "text": "Longleng is the administrative headquarters of Longleng district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0191": {
+   "text": "Roing is the administrative headquarters of Lower Dibang Valley district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0192": {
+   "text": "Lower Siang district is a district of Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0193": {
+   "text": "Ziro is the administrative headquarters of Lower Subansiri district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0194": {
+   "text": "Lunglei is the administrative headquarters of Lunglei district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0195": {
+   "text": "Madurai is the administrative headquarters of Madurai district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0196": {
+   "text": "Mahabubabad is the administrative headquarters of Mahabubabad district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0197": {
+   "text": "Mahabubnagar is the administrative headquarters of Mahabubnagar district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0198": {
+   "text": "Lunavada is the administrative headquarters of Mahisagar district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0199": {
+   "text": "Malappuram is the administrative headquarters of Malappuram district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0200": {
+   "text": "Malegaon District is a district of Maharashtra, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0201": {
+   "text": "Mamit is the administrative headquarters of Mamit district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0202": {
+   "text": "Mancherial is the administrative headquarters of Mancherial district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0203": {
+   "text": "Mandi is the administrative headquarters of Mandi district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0204": {
+   "text": "Mangan is the administrative headquarters of Mangan district, in Sikkim, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0205": {
+   "text": "Markapur is the administrative headquarters of Markapuram district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0206": {
+   "text": "Mayiladuthurai is the administrative headquarters of Mayiladuthurai district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0207": {
+   "text": "Sangareddy mandal is the administrative headquarters of Medak district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0208": {
+   "text": "Shamirpet is the administrative headquarters of Medchal-Malkajgiri district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0209": {
+   "text": "Mehsana is the administrative headquarters of Mehsana district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0210": {
+   "text": "Meluri district is a district of Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0211": {
+   "text": "Midnapore district is a district of Uttar Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0212": {
+   "text": "Mokokchung is the administrative headquarters of Mokokchung district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0213": {
+   "text": "Mon is the administrative headquarters of Mon district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0214": {
+   "text": "Morbi is the administrative headquarters of Morbi district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0215": {
+   "text": "Mulug is the administrative headquarters of Mulugu district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0216": {
+   "text": "Vijayawada is the administrative headquarters of NTR district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0217": {
+   "text": "Nagapattinam is the administrative headquarters of Nagapattinam district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0218": {
+   "text": "Nagarkarnool is the administrative headquarters of Nagarkurnool district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0219": {
+   "text": "Nalgonda is the administrative headquarters of Nalgonda district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0220": {
+   "text": "Namakkal is the administrative headquarters of Namakkal district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0221": {
+   "text": "Namchi is the administrative headquarters of Namchi district, in Sikkim, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0222": {
+   "text": "Namsai is the administrative headquarters of Namsai district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0223": {
+   "text": "Nandyal is the administrative headquarters of Nandyal district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0224": {
+   "text": "Narayanpet is the administrative headquarters of Narayanpet district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0225": {
+   "text": "Rajpipla is the administrative headquarters of Narmada district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0226": {
+   "text": "Navsari is the administrative headquarters of Navsari district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0227": {
+   "text": "Ooty is the administrative headquarters of Nilgiris district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0228": {
+   "text": "Nirmal is the administrative headquarters of Nirmal district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0229": {
+   "text": "Niuland district is a district of Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0230": {
+   "text": "Nizamabad is the administrative headquarters of Nizamabad district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0231": {
+   "text": "Noklak is the administrative headquarters of Noklak district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0232": {
+   "text": "Noney is the administrative headquarters of Noney district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0233": {
+   "text": "Resubelpara is the administrative headquarters of North Garo Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0234": {
+   "text": "Panaji is the administrative headquarters of North Goa district, in Goa, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0235": {
+   "text": "Kailashahar is the administrative headquarters of North Tripura District, in Tripura, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0236": {
+   "text": "Lemmi is the administrative headquarters of Pakke-Kessang district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0237": {
+   "text": "Pakyong is the administrative headquarters of Pakyong district, in Sikkim, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0238": {
+   "text": "Palakkad is the administrative headquarters of Palakkad district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0239": {
+   "text": "Narasaraopet is the administrative headquarters of Palnadu district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0240": {
+   "text": "Godhra is the administrative headquarters of Panchmahal district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0241": {
+   "text": "Yupia is the administrative headquarters of Papum Pare district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0242": {
+   "text": "Parvathipuram is the administrative headquarters of Parvathipuram Manyam district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0243": {
+   "text": "Patan is the administrative headquarters of Patan district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0244": {
+   "text": "Pathanamthitta is the administrative headquarters of Pathanamthitta district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0245": {
+   "text": "Peddapalli is the administrative headquarters of Peddapalli district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0246": {
+   "text": "Perambalur is the administrative headquarters of Perambalur district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0247": {
+   "text": "Peren is the administrative headquarters of Peren district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0248": {
+   "text": "Phek is the administrative headquarters of Phek district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0249": {
+   "text": "Pherzawl is the administrative headquarters of Pherzawl District, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0250": {
+   "text": "Rampachodavaram is the administrative headquarters of Polavaram district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0251": {
+   "text": "Porbandar is the administrative headquarters of Porbandar district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0252": {
+   "text": "Ongole is the administrative headquarters of Prakasam district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0253": {
+   "text": "Pudukkottai is the administrative headquarters of Pudukkottai district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0254": {
+   "text": "Sircilla is the administrative headquarters of Rajanna Sircilla district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0255": {
+   "text": "Rajkot is the administrative headquarters of Rajkot district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0256": {
+   "text": "Ramanathapuram is the administrative headquarters of Ramanathapuram district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0257": {
+   "text": "Hyderabad is the administrative headquarters of Ranga Reddy district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0258": {
+   "text": "Ranipet is the administrative headquarters of Ranipet district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0259": {
+   "text": "Nongpoh is the administrative headquarters of Ri-Bhoi district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0260": {
+   "text": "Himatnagar is the administrative headquarters of Sabarkantha district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0261": {
+   "text": "Siaha is the administrative headquarters of Saiha district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0262": {
+   "text": "Saitual is the administrative headquarters of Saitual district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0263": {
+   "text": "Salem is the administrative headquarters of Salem district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0264": {
+   "text": "Sangareddy mandal is the administrative headquarters of Sangareddy district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0265": {
+   "text": "Senapati is the administrative headquarters of Senapati district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0266": {
+   "text": "Bishramganj is the administrative headquarters of Sepahijala district, in Tripura, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0267": {
+   "text": "Serchhip is the administrative headquarters of Serchhip district, in Mizoram, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0268": {
+   "text": "Shamator district is a district of Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0269": {
+   "text": "Tato, Arunachal Pradesh is the administrative headquarters of Shi Yomi district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0270": {
+   "text": "Shimla is the administrative headquarters of Shimla District, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0271": {
+   "text": "Pangin is the administrative headquarters of Siang district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0272": {
+   "text": "Siddipet is the administrative headquarters of Siddipet district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0273": {
+   "text": "Nahan is the administrative headquarters of Sirmaur district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0274": {
+   "text": "Sivaganga is the administrative headquarters of Sivaganga district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0275": {
+   "text": "Solan is the administrative headquarters of Solan district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0276": {
+   "text": "Soreng is the administrative headquarters of Soreng district, in Sikkim, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0277": {
+   "text": "Baghmara is the administrative headquarters of South Garo Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0278": {
+   "text": "Margao is the administrative headquarters of South Goa District, in Goa, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0279": {
+   "text": "Belonia is the administrative headquarters of South Tripura District, in Tripura, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0280": {
+   "text": "Ampati is the administrative headquarters of South West Garo Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0281": {
+   "text": "Mawkyrwat is the administrative headquarters of South West Khasi Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0282": {
+   "text": "Nellore is the administrative headquarters of Sri Potti Sri Ramulu Nellore district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0283": {
+   "text": "Puttaparthi is the administrative headquarters of Sri Sathya Sai district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0284": {
+   "text": "Srikakulam is the administrative headquarters of Srikakulam district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0285": {
+   "text": "Surat is the administrative headquarters of Surat district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0286": {
+   "text": "Surendranagar is the administrative headquarters of Surendranagar district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0287": {
+   "text": "Suryapet is the administrative headquarters of Suryapet district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0288": {
+   "text": "Tamenglong is the administrative headquarters of Tamenglong district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0289": {
+   "text": "Vyara is the administrative headquarters of Tapi district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0290": {
+   "text": "Tawang is the administrative headquarters of Tawang district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0291": {
+   "text": "Tengnoupal is the administrative headquarters of Tengnoupal district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0292": {
+   "text": "Tenkasi is the administrative headquarters of Tenkasi district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0293": {
+   "text": "Thanjavur is the administrative headquarters of Thanjavur district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0294": {
+   "text": "Theni Allinagaram is the administrative headquarters of Theni district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0295": {
+   "text": "Thiruvananthapuram is the administrative headquarters of Thiruvananthapuram district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0296": {
+   "text": "Thoothukudi is the administrative headquarters of Thoothukudi district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0297": {
+   "text": "Thoubal is the administrative headquarters of Thoubal district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0298": {
+   "text": "Thrissur is the administrative headquarters of Thrissur district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0299": {
+   "text": "Khonsa is the administrative headquarters of Tirap district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0300": {
+   "text": "Tiruchirappalli is the administrative headquarters of Tiruchirappalli district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0301": {
+   "text": "Tirunelveli is the administrative headquarters of Tirunelveli district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0302": {
+   "text": "Tirupati is the administrative headquarters of Tirupati district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0303": {
+   "text": "Tiruppattur is the administrative headquarters of Tirupattur district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0304": {
+   "text": "Tiruppur is the administrative headquarters of Tiruppur district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0305": {
+   "text": "Tiruvallur is the administrative headquarters of Tiruvallur district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0306": {
+   "text": "Tiruvannamalai is the administrative headquarters of Tiruvannamalai district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0307": {
+   "text": "Thiruvarur is the administrative headquarters of Tiruvarur district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0308": {
+   "text": "Tseminyu is the administrative headquarters of Tseminyü district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0309": {
+   "text": "Tuensang is the administrative headquarters of Tuensang district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0310": {
+   "text": "Ukhrul is the administrative headquarters of Ukhrul district, in Manipur, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0311": {
+   "text": "Una, Himachal Pradesh is the administrative headquarters of Una district, in Himachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0312": {
+   "text": "Kailashahar is the administrative headquarters of Unakoti district, in Tripura, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0313": {
+   "text": "Yingkiong is the administrative headquarters of Upper Siang district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0314": {
+   "text": "Daporijo is the administrative headquarters of Upper Subansiri district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0315": {
+   "text": "Vadodara is the administrative headquarters of Vadodara district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0316": {
+   "text": "Valsad is the administrative headquarters of Valsad district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0317": {
+   "text": "Tharad is the administrative headquarters of Vav-Tharad district, in Gujarat, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0318": {
+   "text": "Vellore is the administrative headquarters of Vellore district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0319": {
+   "text": "Vikarabad is the administrative headquarters of Vikarabad district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0320": {
+   "text": "Viluppuram is the administrative headquarters of Viluppuram district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0321": {
+   "text": "Virudhunagar is the administrative headquarters of Virudhunagar district, in Tamil Nadu, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0322": {
+   "text": "Visakhapatnam is the administrative headquarters of Visakhapatnam district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0323": {
+   "text": "Vizianagaram is the administrative headquarters of Vizianagaram district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0324": {
+   "text": "Wanaparthi is the administrative headquarters of Wanaparthy district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0325": {
+   "text": "Warangal is the administrative headquarters of Warangal district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0326": {
+   "text": "Kalpetta is the administrative headquarters of Wayanad district, in Kerala, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0327": {
+   "text": "Tura is the administrative headquarters of West Garo Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0328": {
+   "text": "Bhimavaram is the administrative headquarters of West Godavari district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0329": {
+   "text": "Jowai is the administrative headquarters of West Jaintia Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0330": {
+   "text": "Bomdila is the administrative headquarters of West Kameng district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0331": {
+   "text": "Nongstoin is the administrative headquarters of West Khasi Hills district, in Meghalaya, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0332": {
+   "text": "Aalo is the administrative headquarters of West Siang district, in Arunachal Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0333": {
+   "text": "Agartala is the administrative headquarters of West Tripura District, in Tripura, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0334": {
+   "text": "Wokha is the administrative headquarters of Wokha district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0335": {
+   "text": "Kadapa is the administrative headquarters of YSR Kadapa district, in Andhra Pradesh, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0336": {
+   "text": "Bhongir is the administrative headquarters of Yadadri Bhuvanagiri district, in Telangana, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "dis_0337": {
+   "text": "Zunheboto is the administrative headquarters of Zunheboto district, in Nagaland, India.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "wik_0338": {
    "text": "India, officially the Republic of India, is a country in South Asia. It is the world's seventh-largest country by area and the largest by population.",
    "source": "https://en.wikipedia.org/wiki/India",
    "kind": "prose",
    "title": "India"
   },
-  "wik_0078": {
+  "wik_0339": {
    "text": "The Government of India is the national authority of the Republic of India, established in accordance with the Constitution of India. As outlined in Part I, India is a \"Union of States\", a term often used interchangeably to refer to the \"Union Government\" or the Government of India, representing the central authority.",
    "source": "https://en.wikipedia.org/wiki/Government_of_India",
    "kind": "prose",
    "title": "Government of India"
   },
-  "wik_0079": {
+  "wik_0340": {
    "text": "India is a federal union comprising 28 states and 8 union territories, for a total of 36 subnational entities. The states and union territories in turn are each subdivided into districts, of which a total of around 800 exist.",
    "source": "https://en.wikipedia.org/wiki/States_and_union_territories_of_India",
    "kind": "prose",
    "title": "States and union territories of India"
   },
-  "wik_0080": {
+  "wik_0341": {
    "text": "Andhra Pradesh is a state on the east coast of southern India. The seventh largest Indian state by area and the tenth largest by population, it is bound by the Bay of Bengal to the east, and shares borders with the states of Odisha to the northeast, Chhattisgarh to the north, Telangana to northwest, Karnataka to the west, and Tamil Nadu to the south.",
    "source": "https://en.wikipedia.org/wiki/Andhra_Pradesh",
    "kind": "prose",
    "title": "Andhra Pradesh"
   },
-  "wik_0081": {
+  "wik_0342": {
    "text": "Telangana is a state in southern India on the Deccan Plateau bordering Maharashtra and Chhattisgarh to the north and Andhra Pradesh and Karnataka to the south. It is the eleventh largest and the twelfth most populated state of India.",
    "source": "https://en.wikipedia.org/wiki/Telangana",
    "kind": "prose",
    "title": "Telangana"
   },
-  "wik_0082": {
+  "wik_0343": {
    "text": "Karnataka is a state on the southwestern coast of India. It was formed as Mysore State on 1 November 1956, with the passage of the States Reorganisation Act, and renamed Karnataka in 1973.",
    "source": "https://en.wikipedia.org/wiki/Karnataka",
    "kind": "prose",
    "title": "Karnataka"
   },
-  "wik_0083": {
+  "wik_0344": {
    "text": "Tamil Nadu is the southernmost state of India. The tenth largest Indian state by area and the sixth largest by population, it is the home of the Tamils, who speak the Tamil language, the state's official language and the first to be recognised as a classical language in India.",
    "source": "https://en.wikipedia.org/wiki/Tamil_Nadu",
    "kind": "prose",
    "title": "Tamil Nadu"
   },
-  "wik_0084": {
+  "wik_0345": {
    "text": "Kerala, officially Keralam, is a state on the Malabar Coast of southern India. It was formed on 1 November 1956 under the States Reorganisation Act, which unified the country's Malayalam-speaking regions into a single state.",
    "source": "https://en.wikipedia.org/wiki/Kerala",
    "kind": "prose",
    "title": "Kerala"
   },
-  "wik_0085": {
+  "wik_0346": {
    "text": "Maharashtra is a state in the western peninsular region of India occupying a substantial portion of the Deccan Plateau. It is bordered by the Arabian Sea to the west, the Indian states of Karnataka and Goa to the south, Telangana to the southeast and Chhattisgarh to the east, Gujarat and Madhya Pradesh to the north, and the Indian union territory of Dadra and Nagar Haveli and Daman and Diu to the northwest.",
    "source": "https://en.wikipedia.org/wiki/Maharashtra",
    "kind": "prose",
    "title": "Maharashtra"
   },
-  "wik_0086": {
+  "wik_0347": {
    "text": "Uttar Pradesh is a state in northern India. With over 241 million inhabitants, it is India's most populated state.",
    "source": "https://en.wikipedia.org/wiki/Uttar_Pradesh",
    "kind": "prose",
    "title": "Uttar Pradesh"
   },
-  "wik_0087": {
+  "wik_0348": {
    "text": "West Bengal is a state in the eastern part of India. It is situated along the Bay of Bengal.",
    "source": "https://en.wikipedia.org/wiki/West_Bengal",
    "kind": "prose",
    "title": "West Bengal"
   },
-  "wik_0088": {
+  "wik_0349": {
    "text": "Gujarat is a state along the western coast of India. Its coastline of about 2,340 km (1,450 mi) is the longest in the country, most of which lies on the Kathiawar peninsula.",
    "source": "https://en.wikipedia.org/wiki/Gujarat",
    "kind": "prose",
    "title": "Gujarat"
   },
-  "wik_0089": {
+  "wik_0350": {
    "text": "Rajasthan is a state in northwestern India. It is the largest Indian state by area and the seventh largest by population.",
    "source": "https://en.wikipedia.org/wiki/Rajasthan",
    "kind": "prose",
    "title": "Rajasthan"
   },
-  "wik_0090": {
+  "wik_0351": {
    "text": "Madhya Pradesh is a state in central India. Its capital is Bhopal.",
    "source": "https://en.wikipedia.org/wiki/Madhya_Pradesh",
    "kind": "prose",
    "title": "Madhya Pradesh"
   },
-  "wik_0091": {
+  "wik_0352": {
    "text": "Bihar is a state in eastern India. It borders Uttar Pradesh to its west, Nepal to the north, the northern part of West Bengal to the east, and Jharkhand to the south.",
    "source": "https://en.wikipedia.org/wiki/Bihar",
    "kind": "prose",
    "title": "Bihar"
   },
-  "wik_0092": {
+  "wik_0353": {
    "text": "Punjab is a state in northwestern India. Forming part of the larger Punjab region of the Indian subcontinent, the state is bordered by the Indian states and union territories of Himachal Pradesh to the north and northeast, Haryana to the south and southeast, Rajasthan to the southwest, Jammu and Kashmir to the north.",
    "source": "https://en.wikipedia.org/wiki/Punjab%2C_India",
    "kind": "prose",
    "title": "Punjab, India"
   },
-  "wik_0093": {
+  "wik_0354": {
    "text": "Odisha, spelled Orissa until 2011, is a state located in eastern India. It is the eighth-largest state by area, and the eleventh-largest by population, with over 41 million inhabitants.",
    "source": "https://en.wikipedia.org/wiki/Odisha",
    "kind": "prose",
    "title": "Odisha"
   },
-  "wik_0094": {
+  "wik_0355": {
    "text": "Delhi, officially the National Capital Territory (NCT) of Delhi, is a megacity and a union territory of India containing New Delhi, the capital of India. Straddling the Yamuna river, but spread chiefly to the west, or beyond its right bank, Delhi shares borders with the state of Uttar Pradesh in the east and with the state of Haryana in the remaining directions.",
    "source": "https://en.wikipedia.org/wiki/Delhi",
    "kind": "prose",
    "title": "Delhi"
   },
-  "wik_0095": {
+  "wik_0356": {
    "text": "Hyderabad is the capital and largest city of the Indian state of Telangana. It occupies 650 km2 (250 sq mi) on the Deccan Plateau along the banks of the Musi River, in the northern part of Southern India.",
    "source": "https://en.wikipedia.org/wiki/Hyderabad",
    "kind": "prose",
    "title": "Hyderabad"
   },
-  "wik_0096": {
+  "wik_0357": {
    "text": "Bengaluru, also known as Bangalore, is the capital and largest city of the southern Indian state of Karnataka. As per the 2011 census, the city had a population of 8.4 million, making it the third most populous city in India and the most populous in South India.",
    "source": "https://en.wikipedia.org/wiki/Bengaluru",
    "kind": "prose",
    "title": "Bengaluru"
   },
-  "wik_0097": {
+  "wik_0358": {
    "text": "Chennai, also known as Madras, is the capital and largest city of Tamil Nadu, the southernmost state of India. It is located on the Coromandel Coast of the Bay of Bengal.",
    "source": "https://en.wikipedia.org/wiki/Chennai",
    "kind": "prose",
    "title": "Chennai"
   },
-  "wik_0098": {
+  "wik_0359": {
    "text": "Mumbai, also known as Bombay, is the capital city of the Indian state of Maharashtra and the financial capital of India. Located on the Konkan coast along the west coast of India, it has a deep natural harbour.",
    "source": "https://en.wikipedia.org/wiki/Mumbai",
    "kind": "prose",
    "title": "Mumbai"
   },
-  "wik_0099": {
+  "wik_0360": {
    "text": "Kolkata, also known as Calcutta, is the capital and largest city of the Indian state of West Bengal. It lies on the eastern bank of the Hooghly River, 80 km (50 mi) west of the border with Bangladesh.",
    "source": "https://en.wikipedia.org/wiki/Kolkata",
    "kind": "prose",
    "title": "Kolkata"
   },
-  "wik_0100": {
+  "wik_0361": {
    "text": "Visakhapatnam is the largest and most populous city in the Indian state of Andhra Pradesh. It is between the Eastern Ghats and the coast of the Bay of Bengal.",
    "source": "https://en.wikipedia.org/wiki/Visakhapatnam",
    "kind": "prose",
    "title": "Visakhapatnam"
   },
-  "wik_0101": {
+  "wik_0362": {
    "text": "Amaravati is the capital city of the Indian state of Andhra Pradesh. It is located in Guntur district on the right bank of the Krishna River, 15 kilometres (9.3 mi) southwest of Vijayawada, 25 kilometres northwest of Guntur.",
    "source": "https://en.wikipedia.org/wiki/Amaravati",
    "kind": "prose",
    "title": "Amaravati"
   },
-  "wik_0102": {
+  "wik_0363": {
    "text": "The Parliament of India is the supreme legislative body of the Republic of India. It is a bicameral legislature composed of the Rajya Sabha and the Lok Sabha.",
    "source": "https://en.wikipedia.org/wiki/Parliament_of_India",
    "kind": "prose",
    "title": "Parliament of India"
   },
-  "wik_0103": {
+  "wik_0364": {
    "text": "The president of India is the head of state of the Republic of India. The president is the nominal head of the executive, the first citizen of the country, and the supreme commander of the Indian Armed Forces.",
    "source": "https://en.wikipedia.org/wiki/President_of_India",
    "kind": "prose",
    "title": "President of India"
   },
-  "wik_0104": {
+  "wik_0365": {
    "text": "The prime minister of India is the head of government of the Republic of India. Executive authority is vested in the prime minister and his chosen Council of Ministers, despite the President of India being the nominal head of the executive.",
    "source": "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
    "kind": "prose",
    "title": "Prime Minister of India"
   },
-  "wik_0105": {
+  "wik_0366": {
    "text": "India has a developing market-oriented economy with substantial state participation in strategic sectors. It is the world's sixth-largest economy by nominal GDP and the third-largest by purchasing power parity (PPP) as of April 2026.",
    "source": "https://en.wikipedia.org/wiki/Economy_of_India",
    "kind": "prose",
    "title": "Economy of India"
   },
-  "wik_0106": {
+  "wik_0367": {
    "text": "Indian Railways is a state-owned enterprise organised as a departmental undertaking of the Ministry of Railways of the Government of India and operates India's national railway system. As of 2024, it manages the fourth largest national railway system by size, with a track length of 135,207 km (84,014 mi), running track length of 109,748 km (68,194 mi) and route length of 69,181 km (42,987 mi), of which 66,820 km (41,520 mi) is 1,676 mm broad-gauge.",
    "source": "https://en.wikipedia.org/wiki/Indian_Railways",
    "kind": "prose",
    "title": "Indian Railways"
   },
-  "wik_0107": {
+  "wik_0368": {
    "text": "India is situated north of the equator between 8°4' north to 37°6' north latitude and 68°7' east to 97°25' east longitude. It is the seventh-largest country in the world, with a total area of 3,287,263 square kilometres (1,269,219 mi2).",
    "source": "https://en.wikipedia.org/wiki/Geography_of_India",
    "kind": "prose",
    "title": "Geography of India"
   },
-  "wik_0108": {
+  "wik_0369": {
    "text": "The  Andhra Pradesh Reorganisation Act, 2014, commonly known as the Telangana Act, is an Act of Indian Parliament that split the state of Andhra Pradesh into Telangana and the residuary Andhra Pradesh state, as an outcome of the Telangana movement. The Act defined the boundaries of the two states, determined how the assets and liabilities were to be divided, and laid out the status of Hyderabad as the permanent capital of the new Telangana state and temporary capital of the Andhra Pradesh state.",
    "source": "https://en.wikipedia.org/wiki/Andhra_Pradesh_Reorganisation_Act%2C_2014",
    "kind": "prose",

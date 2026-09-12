@@ -21,7 +21,7 @@ Not the model. It's 135M parameters trained for 60 steps and it is not good — 
 learned *format*, not knowledge, and on some prompts it degenerates into a
 repetition loop. That's documented honestly on the model card.
 
-The interesting part is the **129 tests**, because every one of them pins a failure
+The interesting part is the **131 tests**, because every one of them pins a failure
 mode that produces a *plausible-looking but wrong* run rather than a crash. Those
 are the only bugs worth spending laptop compute on.
 
@@ -38,7 +38,7 @@ are the only bugs worth spending laptop compute on.
 | Knowledge base is self-consistent | Wikidata lists two capitals for Karnataka. Shipping both as *X is the capital* lets retrieval pick the answer by ranking luck — and the suite still reads 100%, because it asks once |
 | Long documents don't outrank short ones | Recall has no length penalty, so a 62-token railways summary beat *New Delhi is the capital of India* on the question *India's national capital* |
 
-Twelve real bugs were found this way during development. **Every one was silent.**
+Fourteen real bugs were found this way during development. **Every one was silent.**
 
 ---
 
@@ -75,8 +75,8 @@ generalise out of the weights they were trained into.
 
 The same facts in a retrieval store answer correctly, cite a source, and are
 corrected by editing one row. So `serve/build_india_kb.py` builds one from live
-Wikidata and Wikipedia — 109 documents covering all 28 states and union
-territories, 49 major cities, and 32 article summaries:
+Wikidata and Wikipedia — 370 documents covering all 28 states and union
+territories, 261 districts, 49 major cities, and 32 article summaries:
 
 ```bash
 PYTHONPATH=serve/src python -m serve.build_india_kb --out serve/india_kb.json
@@ -84,6 +84,11 @@ PYTHONPATH=serve/src python -m serve.validate_kb serve/india_kb.json
 ```
 
 Re-running it refreshes the store. No training, no GPU, no evaluation to redo.
+
+
+The corpus is also published on its own as a dataset:
+[Venki_data_set_Ananthapuram](https://huggingface.co/datasets/Venkatesulu/Venki_data_set_Ananthapuram) — 370 rows, licence recorded per row
+(338 CC0 from Wikidata, 32 CC BY-SA 4.0 from Wikipedia).
 
 **What the build had to defend against.** Every one of these produced confidently
 wrong output that no existing test was failing on:
@@ -94,6 +99,7 @@ wrong output that no existing test was failing on:
 | City query required only *in India, has a population* | 23 of 40 "cities" were states, regions or a demonym: *Karnataka is a major city in India, India* |
 | Karnataka has two capitals at equal rank, no qualifier | Two contradicting documents; retrieval answers by ranking luck |
 | Two population statements for one city | The store disagrees with itself about Vadodara |
+| Capital/headquarters URLs built from a LABEL | `Special:EntityPage/Andhra Pradesh` - a citation field pointing at a dead URL with a raw space in it |
 
 `validate_kb.py` fails the build on all four, and CI runs it against both the KB
 file and the merged store that queries actually hit.
@@ -178,7 +184,7 @@ fine-tuning wins by roughly five orders of magnitude.
 ```bash
 PYTHONPATH=mmllm/src    python -m pytest mmllm/tests -q     # 34 tests
 PYTHONPATH=finetune/src python -m pytest finetune/tests -q  # 38 tests
-PYTHONPATH=serve/src    python -m pytest serve/tests -q     # 57 tests
+PYTHONPATH=serve/src    python -m pytest serve/tests -q     # 59 tests
 ```
 
 CI runs all three on every push, plus four checks that exist because each of

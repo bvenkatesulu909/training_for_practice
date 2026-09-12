@@ -154,6 +154,40 @@ def score(query: str, doc: str) -> float:
 # documents LONGER than average are penalised - being concise is never punished.
 LENGTH_PENALTY = 0.5
 
+# A document that is ABOUT the thing asked for beats one that merely mentions it.
+# Asked which body of water lies east of Andhra Pradesh, "Rajahmundry is the
+# administrative headquarters of East Godavari district, in Andhra Pradesh"
+# matched "east" and "andhra pradesh" and won - it contains the query's words
+# but is about Rajahmundry. "Andhra Pradesh is a state ... bordered to the east
+# by the Bay of Bengal" matches the same words and is about the right subject.
+# This is field-weighted retrieval: the subject is simply a higher-value field.
+SUBJECT_BOOST = 0.35
+
+# Bag-of-words scoring throws away word order, and for short common queries that
+# is fatal. "what is the capital of India" reduces to just {capital, india}, and
+# EVERY one of the 28 "X is the capital of Y, a state of India" documents then
+# scores a perfect 1.000 - the right answer is picked by tie-break, i.e. luck.
+# Adjacency restores the distinction: "capital india" is contiguous in "New Delhi
+# is the capital of India", and absent from "Itanagar is the capital of Arunachal
+# Pradesh, a state of India", which merely contains both words far apart.
+PHRASE_BOOST = 0.30
+_SUBJECT_SPLIT = re.compile(r"\b(?:is|are|was|were|lies|has|have)\b")
+
+
+def bigrams(terms: List[str]) -> set:
+    """Adjacent content-word pairs. Stopwords are already gone, so "capital of
+    India" and "capital India" produce the same pair - which is what makes this
+    match paraphrases rather than only exact strings."""
+    return set(zip(terms, terms[1:]))
+
+
+def subject_terms(doc: str) -> List[str]:
+    """The document's leading entity - everything before its first verb. These
+    sentences are uniformly "<subject> is/are <predicate>", so the split is
+    reliable; when there is no verb the whole text is treated as the subject."""
+    head = _SUBJECT_SPLIT.split(doc, maxsplit=1)[0]
+    return tokenize(head)
+
 
 def rank_score(query: str, doc: str) -> float:
     base = score(query, doc)
@@ -161,7 +195,27 @@ def rank_score(query: str, doc: str) -> float:
         return 0.0
     n = len(tokenize(doc))
     excess = max(0.0, (n - _AVG_LEN) / _AVG_LEN) if _AVG_LEN else 0.0
-    return base / (1.0 + LENGTH_PENALTY * excess)
+    ranked = base / (1.0 + LENGTH_PENALTY * excess)
+
+    q_terms = tokenize(query)
+    qb = bigrams(q_terms)
+    if qb:
+        hit = len(qb & bigrams(tokenize(doc))) / len(qb)
+        ranked *= 1.0 + PHRASE_BOOST * hit
+
+    subj = subject_terms(doc)
+    if subj:
+        # IDF-weighted, not a raw term count. Counting terms let a COMMON word
+        # buy the boost: "capital" covers 1 of the 4 words in "Itanagar Capital
+        # Complex district", which was enough to outrank the right answer on an
+        # injection case. Weighted by IDF, a common word contributes almost
+        # nothing and a distinctive one - "andhra", "pradesh" - contributes the
+        # mass that actually signals what the document is about.
+        q = set(tokenize(query))
+        total = sum(idf(t) for t in subj)
+        covered = sum(idf(t) for t in subj if t in q) / total if total else 0.0
+        ranked *= 1.0 + SUBJECT_BOOST * covered
+    return ranked
 
 
 def retrieve(query: str, k: int = 3, min_score: float = 0.34) -> List[Evidence]:
