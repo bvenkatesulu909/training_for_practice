@@ -1,0 +1,69 @@
+# Stage 3+ — the target you described: 300k context, code + text + image + video.
+# ~2B params. Trained at 8k context, then extended to 300k in a short
+# context-extension phase (raise rope_scaling, do NOT pretrain at 300k).
+#
+# This config does NOT run on the laptop. Run `python -m mmllm.planner
+# --config configs/base_300k.yaml --gflops 989000 --devices 64` to price it.
+name: base_300k
+
+model:
+  vocab_size: 65536       # wide vocab: multilingual + code keeps fertility low
+  dim: 2048
+  n_layers: 32
+  n_heads: 16
+  n_kv_heads: 2           # aggressive GQA — this is the 300k KV-cache lever
+  head_dim: 128
+  window: 4096
+  rope_theta: 1000000.0
+  rope_scaling: null      # set to ~36.0 (300000/8192) for the extension phase
+  ssd_heads: 32
+  ssd_head_dim: 64
+  ssd_state: 128
+  ssd_groups: 2
+  ssd_chunk: 256
+  # 22 of 32 layers are O(L) SSD; only 5 carry an O(L) KV cache.
+  layer_pattern: ["ssd", "ssd", "swa", "ssd", "ssd", "global"]
+  mlp_ratio: 4.0
+  max_seq_len: 8192       # TRAINING length; extension phase raises this
+  tie_embeddings: false
+  z_loss: 1.0e-4
+  vision:
+    enabled: true
+    image_size: 448
+    patch_size: 14
+    temporal_patch: 2
+    dim: 1024
+    depth: 24
+    heads: 8
+    merge_factor: 2       # 448/14/2 = 16 -> 256 tokens per image
+    max_frames: 64
+    rope_theta: 10000.0
+
+data:
+  train_bin: data/train.bin
+  val_bin: data/val.bin
+  tokenizer: data/tokenizer.json
+  dtype: uint32           # vocab > 65535 boundary; uint32 is the safe choice
+  mixture: {web: 0.35, code: 0.30, books: 0.10, math: 0.10, multimodal: 0.10, wiki: 0.05}
+
+train:
+  out_dir: runs/base_300k
+  seq_len: 8192
+  micro_batch: 4
+  grad_accum: 128         # ~4.2M tokens/step across the cluster
+  max_steps: 480000       # ~2T tokens
+  lr: 2.0e-4
+  schedule: wsd
+  warmup_frac: 0.005
+  decay_frac: 0.10
+  weight_decay: 0.1
+  beta2: 0.95
+  grad_clip: 1.0
+  dtype: bfloat16
+  compile: true
+  grad_checkpoint: true
+  device: cuda
+  log_every: 10
+  eval_every: 2000
+  eval_iters: 100
+  ckpt_every: 2000

@@ -1,0 +1,37 @@
+# Same 135M CPU recipe as smol135m_cpu.yaml, pointed at the workspace-wide
+# dataset: every project in C:\Users\User\Desktop\Claude, capped at 400 rows per
+# project so `src` and the root docs cannot drown out the other 19.
+# Swap data_workspace_balanced -> data_workspace for the uncapped 6,024-row build.
+name: smol135m_workspace
+base_model: HuggingFaceTB/SmolLM2-135M-Instruct
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  train_embeddings: false
+
+data:
+  train_file: data_workspace_balanced/train.jsonl
+  val_file: data_workspace_balanced/val.jsonl
+  max_len: 512
+  on_overflow: drop
+  mask_prompt: true
+
+train:
+  out_dir: runs/smol135m_workspace
+  epochs: 1.0
+  micro_batch: 1
+  grad_accum: 4          # 4 examples/step; small because RAM is ~3 GB free
+  lr: 2.0e-4
+  warmup_frac: 0.05
+  weight_decay: 0.0
+  grad_clip: 1.0
+  dtype: float32         # Ivy Bridge has no bf16 path worth using
+  device: cpu
+  num_threads: 4
+  log_every: 5
+  eval_every: 25
+  eval_batches: 12
+  save_every: 25

@@ -1,0 +1,50 @@
+# Stage 0 — architecture validation on the i3 laptop.
+# Purpose is NOT a good model. It is: prove the code trains, loss falls,
+# checkpoint/resume works, throughput is measured. ~6M params.
+# Vision is off: the LM backbone must model language before an encoder is attached.
+name: tiny_cpu
+
+model:
+  vocab_size: 8192
+  dim: 256
+  n_layers: 6
+  n_heads: 4
+  n_kv_heads: 1
+  window: 256
+  rope_theta: 10000.0
+  ssd_heads: 4
+  ssd_head_dim: 64
+  ssd_state: 32
+  ssd_chunk: 64
+  layer_pattern: ["ssd", "ssd", "swa", "ssd", "ssd", "global"]
+  mlp_ratio: 4.0
+  max_seq_len: 512
+  tie_embeddings: true
+  vision:
+    enabled: false
+
+data:
+  train_bin: data/train.bin
+  val_bin: data/val.bin
+  tokenizer: data/tokenizer.json
+  dtype: uint16
+
+train:
+  out_dir: runs/tiny_cpu
+  seq_len: 512
+  micro_batch: 2
+  grad_accum: 8          # 8,192 tokens/step
+  max_steps: 2000
+  lr: 6.0e-4
+  schedule: wsd
+  warmup_frac: 0.02
+  decay_frac: 0.15
+  # no bf16 on Ivy Bridge (no AVX-512/AMX) — fp32 is genuinely faster here.
+  # Keep micro_batch*seq_len small: only ~1.7 GB RAM is free on this machine.
+  dtype: float32
+  device: cpu
+  num_threads: 4
+  log_every: 10
+  eval_every: 200
+  eval_iters: 20
+  ckpt_every: 250

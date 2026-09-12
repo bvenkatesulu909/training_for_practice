@@ -1,0 +1,71 @@
+# Pretraining on TinyStories — the dataset that lets a model this small actually
+# produce coherent English.
+#
+# WHY THIS DATASET
+# TinyStories (Eldan & Li, 2023) is synthetic children's stories written with a
+# deliberately limited vocabulary. Its whole point is that models of 1-30M
+# parameters trained on it generate fluent, grammatical prose — which a model
+# this size cannot do on general web text at any compute budget. Our earlier run
+# on mixed repo documentation produced structure but no grammar; this fixes that.
+#
+# WHY THESE SIZES  (all measured on this machine, ~11.7 GFLOP/s effective)
+#   5.52M params  ->  ~353 tok/s  ->  Chinchilla-optimal 110M tokens = 3.6 days
+#   The ingested corpus is ~122M tokens, so model size and data volume match.
+#   vocab 4096 not 8192: the embedding is already 1.05M of 5.52M parameters.
+#   Doubling vocab spends another 1M on embeddings instead of layers, and
+#   measured fertility at 4096 is 1.31 tokens/word on this corpus.
+#
+# SHORTER RUNS
+#   max_steps 6700 = ~110M tokens = ~3.6 days  (this file; checkpoint/resume works)
+#   max_steps 1500 = ~25M tokens  = ~19 hours  (rough but readable output)
+#   max_steps  400 = ~6.5M tokens = ~5 hours   (proves the loss curve, still babble)
+#   If you shorten it, edit max_steps HERE rather than killing the run — the WSD
+#   schedule derives its decay phase from this value, and the final decay is worth
+#   a surprising amount of quality.
+name: tinystories_cpu
+
+model:
+  vocab_size: 4096
+  dim: 256
+  n_layers: 6
+  n_heads: 4
+  n_kv_heads: 1
+  head_dim: 64
+  window: 256
+  rope_theta: 10000.0
+  ssd_heads: 4
+  ssd_head_dim: 64
+  ssd_state: 48
+  ssd_chunk: 64
+  layer_pattern: ["ssd", "ssd", "swa", "ssd", "ssd", "global"]
+  mlp_ratio: 4.0
+  max_seq_len: 512
+  tie_embeddings: true
+  vision:
+    enabled: false
+
+data:
+  train_bin: data_tinystories/train.bin
+  val_bin: data_tinystories/val.bin
+  tokenizer: data_tinystories/tokenizer.json
+  dtype: uint16
+
+train:
+  out_dir: runs/tinystories
+  seq_len: 512
+  micro_batch: 4
+  grad_accum: 8          # 16,384 tokens/step
+  max_steps: 6700        # ~110M tokens
+  lr: 1.0e-3             # small models tolerate — and want — a high learning rate
+  schedule: wsd
+  warmup_frac: 0.01
+  decay_frac: 0.15
+  weight_decay: 0.1
+  grad_clip: 1.0
+  dtype: float32
+  device: cpu
+  num_threads: 4
+  log_every: 20
+  eval_every: 250
+  eval_iters: 20
+  ckpt_every: 250

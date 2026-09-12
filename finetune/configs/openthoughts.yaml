@@ -1,0 +1,78 @@
+# Reasoning distillation on OpenThoughts (DeepSeek-R1 traces).
+#
+# THIS IS A DIFFERENT KIND OF DATASET and the parameters change accordingly.
+# Measured on the real data, not assumed:
+#   median example   7,746 tokens        p90  18,869 tokens      max ~30,000
+#   mean             8,487 tokens        total corpus ~967M tokens/epoch
+#   every answer is wrapped in <|begin_of_thought|> ... long chain-of-thought
+#
+# WHAT CHANGED vs the dolly/repo configs, and why:
+#
+#   max_len 1024 -> 16384
+#     At 1024, ZERO examples survive — the run would train on an empty set.
+#     Measured survival: 1k=0%, 2k=1.9%, 4k=21%, 8k=53%, 16k=85%, 32k=99.9%.
+#     16384 is the knee: 85% kept without paying for a 32k attention window.
+#     `ft.train` now refuses to start if >50% of examples are dropped.
+#
+#   base_model 135M -> Qwen2.5-7B-Instruct
+#     Reasoning distillation needs a model that can already reason. The R1-Distill
+#     series used Qwen2.5 at 1.5B/7B/14B/32B for exactly this data. A 135M model
+#     cannot learn chain-of-thought; it will learn to emit the <|begin_of_thought|>
+#     marker and then produce noise. Swap to Qwen2.5-1.5B-Instruct for a 24 GB card.
+#
+#   lora r 16 -> 64
+#     Teaching a new *behaviour* (think-then-answer) is a much larger change than
+#     domain style. Rank 16 is enough to shift tone; it is not enough to install a
+#     reasoning format.
+#
+#   micro_batch 4 -> 1, grad_accum 8 -> 32
+#     Attention is quadratic in sequence length. At 16k a single sequence already
+#     costs more activation memory than 32 sequences did at 1k.
+#
+#   lr 2e-4 -> 5e-5
+#     Larger base model and larger rank both want a smaller step.
+#
+# HARDWARE (from `python -m ft.planner --config configs/openthoughts.yaml`)
+#   LoRA weights           16.59 GiB   (frozen base 14.18 + adapter states 2.41)
+#   activations @ 16k      5.23 GiB with grad checkpointing, 66.94 GiB without
+#   PEAK                  21.83 GiB  -> needs a 48 GB card; a 24 GB card does NOT fit
+#   time                   ~4.9 h for 2 epochs on 1 shard (11,742 ex) ~= $12
+#                          ~49 h for all 6 shards (113,957 ex)        ~= $120
+#   For a 24 GB card use Qwen2.5-1.5B-Instruct instead, or drop max_len to 8192
+#   (which keeps 53% of examples rather than 85%).
+#
+# Gradient checkpointing is not optional here: it is a 13x difference in
+# activation memory, and it is the only reason this fits on one GPU at all.
+name: openthoughts
+base_model: Qwen/Qwen2.5-7B-Instruct
+
+lora:
+  r: 64
+  alpha: 128
+  dropout: 0.0           # long sequences already regularise; dropout mostly adds noise here
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  train_embeddings: false
+
+data:
+  train_file: data_openthoughts/train.jsonl
+  val_file: data_openthoughts/val.jsonl
+  max_len: 16384
+  on_overflow: drop      # never truncate a reasoning trace mid-thought
+  mask_prompt: true      # ~90% of tokens are the answer here, which is correct
+
+train:
+  out_dir: runs/openthoughts
+  epochs: 2.0
+  micro_batch: 1
+  grad_accum: 32
+  lr: 5.0e-5
+  min_lr_frac: 0.1
+  warmup_frac: 0.03
+  weight_decay: 0.0
+  grad_clip: 1.0
+  dtype: bfloat16
+  device: cuda
+  log_every: 10
+  eval_every: 200
+  eval_batches: 20
+  save_every: 200

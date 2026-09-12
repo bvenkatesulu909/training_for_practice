@@ -1,0 +1,9 @@
+# Checkpoints are ~78 MB each — never commit them.
+runs/
+data/
+corpus/
+*.bin
+*.pt
+__pycache__/
+*.pyc
+.pytest_cache/

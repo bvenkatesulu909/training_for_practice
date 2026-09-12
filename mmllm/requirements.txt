@@ -1,0 +1,22 @@
+# Core — enough to run everything on the CPU laptop.
+torch>=2.4
+numpy>=1.24
+pyyaml>=6.0
+tokenizers>=0.15
+pytest>=7.4
+
+# Corpus ingestion (mmllm.data.hf_ingest only; imported lazily, so the rest of
+# the package -- BinWriter, training, eval -- runs without it)
+# pyarrow>=15.0            # reads the parquet shards
+# huggingface-hub>=0.23    # downloads them
+
+# Vision data (only needed once vision.enabled=true)
+# pillow>=10.0
+# av>=12.0                 # video decode
+
+# GPU-only, for the rented-hardware stages
+# flash-attn>=2.6          # replaces the SDPA path
+# mamba-ssm>=2.2           # CUDA kernel; drop-in for ssd_chunked, ~3-5x faster
+# causal-conv1d>=1.4
+# datasets>=2.20           # streaming corpora
+# wandb>=0.17

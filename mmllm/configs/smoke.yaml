@@ -1,0 +1,45 @@
+# Smallest run that still exercises every code path: hybrid SSD+SWA+global
+# layers, WSD schedule, spike guard, eval, atomic checkpointing.
+# Sized to finish in minutes on the i3 — it validates the machinery, not quality.
+name: smoke
+
+model:
+  vocab_size: 8192
+  dim: 256
+  n_layers: 6
+  n_heads: 4
+  n_kv_heads: 1
+  window: 128
+  rope_theta: 10000.0
+  ssd_heads: 4
+  ssd_head_dim: 64
+  ssd_state: 32
+  ssd_chunk: 64
+  layer_pattern: ["ssd", "ssd", "swa", "ssd", "ssd", "global"]
+  max_seq_len: 256
+  vision:
+    enabled: false
+
+data:
+  train_bin: data/train.bin
+  val_bin: data/val.bin
+  tokenizer: data/tokenizer.json
+  dtype: uint16
+
+train:
+  out_dir: runs/smoke
+  seq_len: 256
+  micro_batch: 4
+  grad_accum: 2          # 2,048 tokens/step
+  max_steps: 120
+  lr: 1.0e-3
+  schedule: wsd
+  warmup_frac: 0.05
+  decay_frac: 0.3
+  dtype: float32
+  device: cpu
+  num_threads: 4
+  log_every: 10
+  eval_every: 40
+  eval_iters: 8
+  ckpt_every: 60

@@ -1,0 +1,32 @@
+# The run worth actually doing: Qwen2.5-0.5B-Instruct on 1 small GPU.
+# ~30-60 min on a T4/L4, a few dollars. Also runs on CPU overnight if patient.
+name: qwen05b
+base_model: Qwen/Qwen2.5-0.5B-Instruct
+
+lora:
+  r: 32
+  alpha: 64
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  train_embeddings: false
+
+data:
+  train_file: data/train.jsonl
+  val_file: data/val.jsonl
+  max_len: 1024
+  on_overflow: drop
+  mask_prompt: true
+
+train:
+  out_dir: runs/qwen05b
+  epochs: 3.0
+  micro_batch: 4
+  grad_accum: 8          # 32 examples/step
+  lr: 1.0e-4
+  warmup_frac: 0.03
+  dtype: bfloat16
+  device: cuda
+  log_every: 10
+  eval_every: 100
+  eval_batches: 30
+  save_every: 200

@@ -1,0 +1,53 @@
+# Stage 1 — the first run that produces a model worth talking to.
+# ~400M params, 8B tokens (20x Chinchilla), 4k context, text+code only.
+# 1x A100-80G or H100: roughly 3-5 days. ~$150-400 rented.
+name: small_1gpu
+
+model:
+  vocab_size: 32768
+  dim: 1024
+  n_layers: 24
+  n_heads: 16
+  n_kv_heads: 4
+  head_dim: 64
+  window: 2048
+  rope_theta: 500000.0
+  ssd_heads: 16
+  ssd_head_dim: 64
+  ssd_state: 64
+  ssd_groups: 1
+  ssd_chunk: 256
+  layer_pattern: ["ssd", "ssd", "swa", "ssd", "ssd", "global"]
+  mlp_ratio: 4.0
+  max_seq_len: 4096
+  tie_embeddings: true
+  vision:
+    enabled: false        # turned on in stage 2, after the LM works
+
+data:
+  train_bin: data/train.bin
+  val_bin: data/val.bin
+  tokenizer: data/tokenizer.json
+  dtype: uint16
+  mixture: {web: 0.45, code: 0.30, books: 0.10, math: 0.10, wiki: 0.05}
+
+train:
+  out_dir: runs/small_1gpu
+  seq_len: 4096
+  micro_batch: 8
+  grad_accum: 16         # 524,288 tokens/step
+  max_steps: 16000       # ~8.4B tokens
+  lr: 3.0e-4
+  schedule: wsd
+  warmup_frac: 0.01
+  decay_frac: 0.15
+  weight_decay: 0.1
+  grad_clip: 1.0
+  dtype: bfloat16
+  compile: true
+  grad_checkpoint: true
+  device: cuda
+  log_every: 10
+  eval_every: 500
+  eval_iters: 50
+  ckpt_every: 1000

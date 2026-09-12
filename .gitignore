@@ -1,0 +1,15 @@
+# data, checkpoints and caches never belong in git
+data/
+data_*/
+runs/
+export/
+corpus/
+*.bin
+*.pt
+*.jsonl
+*.safetensors
+__pycache__/
+*.pyc
+.pytest_cache/
+.benchmarks/
+.venv/
