@@ -21,7 +21,7 @@ Not the model. It's 135M parameters trained for 60 steps and it is not good — 
 learned *format*, not knowledge, and on some prompts it degenerates into a
 repetition loop. That's documented honestly on the model card.
 
-The interesting part is the **117 tests**, because every one of them pins a failure
+The interesting part is the **129 tests**, because every one of them pins a failure
 mode that produces a *plausible-looking but wrong* run rather than a crash. Those
 are the only bugs worth spending laptop compute on.
 
@@ -35,8 +35,10 @@ are the only bugs worth spending laptop compute on.
 | Cached generation == full forward | Decode path drifting from the training path |
 | SSD chunked scan == reference scan | The entire long-context argument rests on this |
 | Analytic params == real model | Cost estimates drifting from the code they price |
+| Knowledge base is self-consistent | Wikidata lists two capitals for Karnataka. Shipping both as *X is the capital* lets retrieval pick the answer by ranking luck — and the suite still reads 100%, because it asks once |
+| Long documents don't outrank short ones | Recall has no length penalty, so a 62-token railways summary beat *New Delhi is the capital of India* on the question *India's national capital* |
 
-Ten real bugs were found this way during development. **Every one was silent.**
+Twelve real bugs were found this way during development. **Every one was silent.**
 
 ---
 
@@ -61,6 +63,40 @@ calculator, latency by not calling a model for most requests.
 
 `serve/SPEC.md` records the targets and the RAG-vs-fine-tune decision, written
 before any of it was measured.
+
+---
+
+## Why the facts are not in the weights
+
+This was measured, not assumed. Fine-tuning 22 facts drove validation loss from
+**1.6301 to 0.0680** — a 24x improvement — and the model still answered *what is
+Karnataka's capital* wrong, because Karnataka was not one of the 22. Facts do not
+generalise out of the weights they were trained into.
+
+The same facts in a retrieval store answer correctly, cite a source, and are
+corrected by editing one row. So `serve/build_india_kb.py` builds one from live
+Wikidata and Wikipedia — 109 documents covering all 28 states and union
+territories, 49 major cities, and 32 article summaries:
+
+```bash
+PYTHONPATH=serve/src python -m serve.build_india_kb --out serve/india_kb.json
+PYTHONPATH=serve/src python -m serve.validate_kb serve/india_kb.json
+```
+
+Re-running it refreshes the store. No training, no GPU, no evaluation to redo.
+
+**What the build had to defend against.** Every one of these produced confidently
+wrong output that no existing test was failing on:
+
+| Source defect | Effect if shipped |
+|---|---|
+| Dissolved entities carry stale capitals | *Hyderabad is the capital of Andhra Pradesh* — true until 2014, false now |
+| City query required only *in India, has a population* | 24 of 40 "cities" were states: *Karnataka is a major city in India, India* |
+| Karnataka has two capitals at equal rank, no qualifier | Two contradicting documents; retrieval answers by ranking luck |
+| Two population statements for one city | The store disagrees with itself about Vadodara |
+
+`validate_kb.py` fails the build on all four, and CI runs it against both the KB
+file and the merged store that queries actually hit.
 
 ## Quickstart
 
@@ -142,10 +178,10 @@ fine-tuning wins by roughly five orders of magnitude.
 ```bash
 PYTHONPATH=mmllm/src    python -m pytest mmllm/tests -q     # 34 tests
 PYTHONPATH=finetune/src python -m pytest finetune/tests -q  # 38 tests
-PYTHONPATH=serve/src    python -m pytest serve/tests -q     # 45 tests
+PYTHONPATH=serve/src    python -m pytest serve/tests -q     # 57 tests
 ```
 
-CI runs all three on every push, plus three checks that exist because each of
+CI runs all three on every push, plus four checks that exist because each of
 these went wrong by hand during development — see
 [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 

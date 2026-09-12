@@ -1,0 +1,583 @@
+{
+ "built": "2026-09-12",
+ "count": 109,
+ "docs": {
+  "adm_0000": {
+   "text": "Amaravati is the capital of Andhra Pradesh, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Andhra Pradesh",
+   "kind": "structured"
+  },
+  "adm_0001": {
+   "text": "Itanagar is the capital of Arunachal Pradesh, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Arunachal Pradesh",
+   "kind": "structured"
+  },
+  "adm_0002": {
+   "text": "Dispur is the capital of Assam, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Assam",
+   "kind": "structured"
+  },
+  "adm_0003": {
+   "text": "Patna is the capital of Bihar, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Bihar",
+   "kind": "structured"
+  },
+  "adm_0004": {
+   "text": "Raipur is the capital of Chhattisgarh, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Chhattisgarh",
+   "kind": "structured"
+  },
+  "adm_0005": {
+   "text": "Panaji is the capital of Goa, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Goa",
+   "kind": "structured"
+  },
+  "adm_0006": {
+   "text": "Gandhinagar is the capital of Gujarat, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Gujarat",
+   "kind": "structured"
+  },
+  "adm_0007": {
+   "text": "Chandigarh is the capital of Haryana, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Haryana",
+   "kind": "structured"
+  },
+  "adm_0008": {
+   "text": "Shimla is the capital of Himachal Pradesh, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Himachal Pradesh",
+   "kind": "structured"
+  },
+  "adm_0009": {
+   "text": "Ranchi is the capital of Jharkhand, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Jharkhand",
+   "kind": "structured"
+  },
+  "adm_0010": {
+   "text": "Belgaum and Bengaluru are both recorded as capitals of Karnataka, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Karnataka",
+   "kind": "structured"
+  },
+  "adm_0011": {
+   "text": "Thiruvananthapuram is the capital of Kerala, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Kerala",
+   "kind": "structured"
+  },
+  "adm_0012": {
+   "text": "Bhopal is the capital of Madhya Pradesh, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Madhya Pradesh",
+   "kind": "structured"
+  },
+  "adm_0013": {
+   "text": "Mumbai and Nagpur are both recorded as capitals of Maharashtra, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Maharashtra",
+   "kind": "structured"
+  },
+  "adm_0014": {
+   "text": "Imphal is the capital of Manipur, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Manipur",
+   "kind": "structured"
+  },
+  "adm_0015": {
+   "text": "Shillong is the capital of Meghalaya, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Meghalaya",
+   "kind": "structured"
+  },
+  "adm_0016": {
+   "text": "Aizawl is the capital of Mizoram, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Mizoram",
+   "kind": "structured"
+  },
+  "adm_0017": {
+   "text": "Kohima is the capital of Nagaland, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Nagaland",
+   "kind": "structured"
+  },
+  "adm_0018": {
+   "text": "Bhubaneswar is the capital of Odisha, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Odisha",
+   "kind": "structured"
+  },
+  "adm_0019": {
+   "text": "Chandigarh is the capital of Punjab, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Punjab",
+   "kind": "structured"
+  },
+  "adm_0020": {
+   "text": "Jaipur is the capital of Rajasthan, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Rajasthan",
+   "kind": "structured"
+  },
+  "adm_0021": {
+   "text": "Gangtok is the capital of Sikkim, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Sikkim",
+   "kind": "structured"
+  },
+  "adm_0022": {
+   "text": "Chennai is the capital of Tamil Nadu, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Tamil Nadu",
+   "kind": "structured"
+  },
+  "adm_0023": {
+   "text": "Hyderabad is the capital of Telangana, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Telangana",
+   "kind": "structured"
+  },
+  "adm_0024": {
+   "text": "Agartala is the capital of Tripura, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Tripura",
+   "kind": "structured"
+  },
+  "adm_0025": {
+   "text": "Lucknow is the capital of Uttar Pradesh, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Uttar Pradesh",
+   "kind": "structured"
+  },
+  "adm_0026": {
+   "text": "Dehradun and Gairsain are both recorded as capitals of Uttarakhand, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/Uttarakhand",
+   "kind": "structured"
+  },
+  "adm_0027": {
+   "text": "Kolkata is the capital of West Bengal, a state of India.",
+   "source": "https://www.wikidata.org/wiki/Special:EntityPage/West Bengal",
+   "kind": "structured"
+  },
+  "cty_0028": {
+   "text": "Delhi is a major city in India, with a population of about 26,495,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0029": {
+   "text": "Mumbai is a major city in India, with a population of about 15,414,288.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0030": {
+   "text": "Bengaluru is a major city in India, with a population of about 12,327,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0031": {
+   "text": "Hyderabad is a major city in India, with a population of about 9,191,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0032": {
+   "text": "Ahmedabad is a major city in India, with a population of about 7,645,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0033": {
+   "text": "Chennai is a major city in India, with a population of about 6,599,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0034": {
+   "text": "Pune is a major city in India, with a population of about 6,200,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0035": {
+   "text": "Prayagraj is a major city in India, with a population of about 5,954,391.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0036": {
+   "text": "Surat is a major city in India, with a population of about 5,935,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0037": {
+   "text": "Kanpur is a major city in India, with a population of about 4,581,268.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0038": {
+   "text": "Kolkata is a major city in India, with a population of about 4,496,694.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0039": {
+   "text": "Lucknow is a major city in India, with a population of about 3,382,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0040": {
+   "text": "Vadodara is a major city in India, with a population of about 3,100,260.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0041": {
+   "text": "Jaipur is a major city in India, with a population of about 3,073,350.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0042": {
+   "text": "Nagpur is a major city in India, with a population of about 2,405,665.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0043": {
+   "text": "Ghaziabad is a major city in India, with a population of about 2,375,820.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0044": {
+   "text": "Rajkot is a major city in India, with a population of about 2,043,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0045": {
+   "text": "Visakhapatnam is a major city in India, with a population of about 2,035,922.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0046": {
+   "text": "Indore is a major city in India, with a population of about 1,994,397.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0047": {
+   "text": "Thane is a major city in India, with a population of about 1,886,941.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0048": {
+   "text": "Bhopal is a major city in India, with a population of about 1,798,218.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0049": {
+   "text": "Patna is a major city in India, with a population of about 1,684,222.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0050": {
+   "text": "Ludhiana is a major city in India, with a population of about 1,618,879.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0051": {
+   "text": "Agra is a major city in India, with a population of about 1,585,705.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0052": {
+   "text": "Meerut is a major city in India, with a population of about 1,571,434.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0053": {
+   "text": "Madurai is a major city in India, with a population of about 1,561,129.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0054": {
+   "text": "Jamshedpur is a major city in India, with a population of about 1,558,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0055": {
+   "text": "Nashik is a major city in India, with a population of about 1,486,053.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0056": {
+   "text": "Faridabad is a major city in India, with a population of about 1,404,653.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0057": {
+   "text": "Jabalpur is a major city in India, with a population of about 1,267,564.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0058": {
+   "text": "Vasai-Virar is a major city in India, with a population of about 1,222,390.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0059": {
+   "text": "Varanasi is a major city in India, with a population of about 1,198,491.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0060": {
+   "text": "Srinagar is a major city in India, with a population of about 1,180,570.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0061": {
+   "text": "Aurangabad is a major city in India, with a population of about 1,175,116.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0062": {
+   "text": "Amritsar is a major city in India, with a population of about 1,159,227.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0063": {
+   "text": "Navi Mumbai is a major city in India, with a population of about 1,119,477.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0064": {
+   "text": "Guwahati is a major city in India, with a population of about 1,116,267.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0065": {
+   "text": "Ranchi is a major city in India, with a population of about 1,073,440.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0066": {
+   "text": "Gwalior is a major city in India, with a population of about 1,069,276.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0067": {
+   "text": "Chandigarh is a major city in India, with a population of about 1,055,450.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0068": {
+   "text": "Vijayawada is a major city in India, with a population of about 1,048,240.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0069": {
+   "text": "Jodhpur is a major city in India, with a population of about 1,033,918.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0070": {
+   "text": "Raipur is a major city in India, with a population of about 1,010,087.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0071": {
+   "text": "Kota is a major city in India, with a population of about 1,001,694.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0072": {
+   "text": "Bareilly is a major city in India, with a population of about 1,000,000.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0073": {
+   "text": "Coimbatore is a major city in India, with a population of about 959,823.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0074": {
+   "text": "Solapur is a major city in India, with a population of about 951,558.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0075": {
+   "text": "Mysore is a major city in India, with a population of about 920,550.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "cty_0076": {
+   "text": "Tiruchirappalli is a major city in India, with a population of about 916,857.",
+   "source": "https://www.wikidata.org/",
+   "kind": "structured"
+  },
+  "wik_0077": {
+   "text": "India, officially the Republic of India, is a country in South Asia. It is the world's seventh-largest country by area and the largest by population.",
+   "source": "https://en.wikipedia.org/wiki/India",
+   "kind": "prose",
+   "title": "India"
+  },
+  "wik_0078": {
+   "text": "The Government of India is the national authority of the Republic of India, established in accordance with the Constitution of India. As outlined in Part I, India is a \"Union of States\", a term often used interchangeably to refer to the \"Union Government\" or the Government of India, representing the central authority.",
+   "source": "https://en.wikipedia.org/wiki/Government_of_India",
+   "kind": "prose",
+   "title": "Government of India"
+  },
+  "wik_0079": {
+   "text": "India is a federal union comprising 28 states and 8 union territories, for a total of 36 subnational entities. The states and union territories in turn are each subdivided into districts, of which a total of around 800 exist.",
+   "source": "https://en.wikipedia.org/wiki/States_and_union_territories_of_India",
+   "kind": "prose",
+   "title": "States and union territories of India"
+  },
+  "wik_0080": {
+   "text": "Andhra Pradesh is a state on the east coast of southern India. The seventh largest Indian state by area and the tenth largest by population, it is bound by the Bay of Bengal to the east, and shares borders with the states of Odisha to the northeast, Chhattisgarh to the north, Telangana to northwest, Karnataka to the west, and Tamil Nadu to the south.",
+   "source": "https://en.wikipedia.org/wiki/Andhra_Pradesh",
+   "kind": "prose",
+   "title": "Andhra Pradesh"
+  },
+  "wik_0081": {
+   "text": "Telangana is a state in southern India on the Deccan Plateau bordering Maharashtra and Chhattisgarh to the north and Andhra Pradesh and Karnataka to the south. It is the eleventh largest and the twelfth most populated state of India.",
+   "source": "https://en.wikipedia.org/wiki/Telangana",
+   "kind": "prose",
+   "title": "Telangana"
+  },
+  "wik_0082": {
+   "text": "Karnataka is a state on the southwestern coast of India. It was formed as Mysore State on 1 November 1956, with the passage of the States Reorganisation Act, and renamed Karnataka in 1973.",
+   "source": "https://en.wikipedia.org/wiki/Karnataka",
+   "kind": "prose",
+   "title": "Karnataka"
+  },
+  "wik_0083": {
+   "text": "Tamil Nadu is the southernmost state of India. The tenth largest Indian state by area and the sixth largest by population, it is the home of the Tamils, who speak the Tamil language, the state's official language and the first to be recognised as a classical language in India.",
+   "source": "https://en.wikipedia.org/wiki/Tamil_Nadu",
+   "kind": "prose",
+   "title": "Tamil Nadu"
+  },
+  "wik_0084": {
+   "text": "Kerala, officially Keralam, is a state on the Malabar Coast of southern India. It was formed on 1 November 1956 under the States Reorganisation Act, which unified the country's Malayalam-speaking regions into a single state.",
+   "source": "https://en.wikipedia.org/wiki/Kerala",
+   "kind": "prose",
+   "title": "Kerala"
+  },
+  "wik_0085": {
+   "text": "Maharashtra is a state in the western peninsular region of India occupying a substantial portion of the Deccan Plateau. It is bordered by the Arabian Sea to the west, the Indian states of Karnataka and Goa to the south, Telangana to the southeast and Chhattisgarh to the east, Gujarat and Madhya Pradesh to the north, and the Indian union territory of Dadra and Nagar Haveli and Daman and Diu to the northwest.",
+   "source": "https://en.wikipedia.org/wiki/Maharashtra",
+   "kind": "prose",
+   "title": "Maharashtra"
+  },
+  "wik_0086": {
+   "text": "Uttar Pradesh is a state in northern India. With over 241 million inhabitants, it is India's most populated state.",
+   "source": "https://en.wikipedia.org/wiki/Uttar_Pradesh",
+   "kind": "prose",
+   "title": "Uttar Pradesh"
+  },
+  "wik_0087": {
+   "text": "West Bengal is a state in the eastern part of India. It is situated along the Bay of Bengal.",
+   "source": "https://en.wikipedia.org/wiki/West_Bengal",
+   "kind": "prose",
+   "title": "West Bengal"
+  },
+  "wik_0088": {
+   "text": "Gujarat is a state along the western coast of India. Its coastline of about 2,340 km (1,450 mi) is the longest in the country, most of which lies on the Kathiawar peninsula.",
+   "source": "https://en.wikipedia.org/wiki/Gujarat",
+   "kind": "prose",
+   "title": "Gujarat"
+  },
+  "wik_0089": {
+   "text": "Rajasthan is a state in northwestern India. It is the largest Indian state by area and the seventh largest by population.",
+   "source": "https://en.wikipedia.org/wiki/Rajasthan",
+   "kind": "prose",
+   "title": "Rajasthan"
+  },
+  "wik_0090": {
+   "text": "Madhya Pradesh is a state in central India. Its capital is Bhopal.",
+   "source": "https://en.wikipedia.org/wiki/Madhya_Pradesh",
+   "kind": "prose",
+   "title": "Madhya Pradesh"
+  },
+  "wik_0091": {
+   "text": "Bihar is a state in eastern India. It borders Uttar Pradesh to its west, Nepal to the north, the northern part of West Bengal to the east, and Jharkhand to the south.",
+   "source": "https://en.wikipedia.org/wiki/Bihar",
+   "kind": "prose",
+   "title": "Bihar"
+  },
+  "wik_0092": {
+   "text": "Punjab is a state in northwestern India. Forming part of the larger Punjab region of the Indian subcontinent, the state is bordered by the Indian states and union territories of Himachal Pradesh to the north and northeast, Haryana to the south and southeast, Rajasthan to the southwest, Jammu and Kashmir to the north.",
+   "source": "https://en.wikipedia.org/wiki/Punjab%2C_India",
+   "kind": "prose",
+   "title": "Punjab, India"
+  },
+  "wik_0093": {
+   "text": "Odisha, spelled Orissa until 2011, is a state located in eastern India. It is the eighth-largest state by area, and the eleventh-largest by population, with over 41 million inhabitants.",
+   "source": "https://en.wikipedia.org/wiki/Odisha",
+   "kind": "prose",
+   "title": "Odisha"
+  },
+  "wik_0094": {
+   "text": "Delhi, officially the National Capital Territory (NCT) of Delhi, is a megacity and a union territory of India containing New Delhi, the capital of India. Straddling the Yamuna river, but spread chiefly to the west, or beyond its right bank, Delhi shares borders with the state of Uttar Pradesh in the east and with the state of Haryana in the remaining directions.",
+   "source": "https://en.wikipedia.org/wiki/Delhi",
+   "kind": "prose",
+   "title": "Delhi"
+  },
+  "wik_0095": {
+   "text": "Hyderabad is the capital and largest city of the Indian state of Telangana. It occupies 650 km2 (250 sq mi) on the Deccan Plateau along the banks of the Musi River, in the northern part of Southern India.",
+   "source": "https://en.wikipedia.org/wiki/Hyderabad",
+   "kind": "prose",
+   "title": "Hyderabad"
+  },
+  "wik_0096": {
+   "text": "Bengaluru, also known as Bangalore, is the capital and largest city of the southern Indian state of Karnataka. As per the 2011 census, the city had a population of 8.4 million, making it the third most populous city in India and the most populous in South India.",
+   "source": "https://en.wikipedia.org/wiki/Bengaluru",
+   "kind": "prose",
+   "title": "Bengaluru"
+  },
+  "wik_0097": {
+   "text": "Chennai, also known as Madras, is the capital and largest city of Tamil Nadu, the southernmost state of India. It is located on the Coromandel Coast of the Bay of Bengal.",
+   "source": "https://en.wikipedia.org/wiki/Chennai",
+   "kind": "prose",
+   "title": "Chennai"
+  },
+  "wik_0098": {
+   "text": "Mumbai, also known as Bombay, is the capital city of the Indian state of Maharashtra and the financial capital of India. Located on the Konkan coast along the west coast of India, it has a deep natural harbour.",
+   "source": "https://en.wikipedia.org/wiki/Mumbai",
+   "kind": "prose",
+   "title": "Mumbai"
+  },
+  "wik_0099": {
+   "text": "Kolkata, also known as Calcutta, is the capital and largest city of the Indian state of West Bengal. It lies on the eastern bank of the Hooghly River, 80 km (50 mi) west of the border with Bangladesh.",
+   "source": "https://en.wikipedia.org/wiki/Kolkata",
+   "kind": "prose",
+   "title": "Kolkata"
+  },
+  "wik_0100": {
+   "text": "Visakhapatnam is the largest and most populous city in the Indian state of Andhra Pradesh. It is between the Eastern Ghats and the coast of the Bay of Bengal.",
+   "source": "https://en.wikipedia.org/wiki/Visakhapatnam",
+   "kind": "prose",
+   "title": "Visakhapatnam"
+  },
+  "wik_0101": {
+   "text": "Amaravati is the capital city of the Indian state of Andhra Pradesh. It is located in Guntur district on the right bank of the Krishna River, 15 kilometres (9.3 mi) southwest of Vijayawada, 25 kilometres northwest of Guntur.",
+   "source": "https://en.wikipedia.org/wiki/Amaravati",
+   "kind": "prose",
+   "title": "Amaravati"
+  },
+  "wik_0102": {
+   "text": "The Parliament of India is the supreme legislative body of the Republic of India. It is a bicameral legislature composed of the Rajya Sabha and the Lok Sabha.",
+   "source": "https://en.wikipedia.org/wiki/Parliament_of_India",
+   "kind": "prose",
+   "title": "Parliament of India"
+  },
+  "wik_0103": {
+   "text": "The president of India is the head of state of the Republic of India. The president is the nominal head of the executive, the first citizen of the country, and the supreme commander of the Indian Armed Forces.",
+   "source": "https://en.wikipedia.org/wiki/President_of_India",
+   "kind": "prose",
+   "title": "President of India"
+  },
+  "wik_0104": {
+   "text": "The prime minister of India is the head of government of the Republic of India. Executive authority is vested in the prime minister and his chosen Council of Ministers, despite the President of India being the nominal head of the executive.",
+   "source": "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
+   "kind": "prose",
+   "title": "Prime Minister of India"
+  },
+  "wik_0105": {
+   "text": "India has a developing market-oriented economy with substantial state participation in strategic sectors. It is the world's sixth-largest economy by nominal GDP and the third-largest by purchasing power parity (PPP) as of April 2026.",
+   "source": "https://en.wikipedia.org/wiki/Economy_of_India",
+   "kind": "prose",
+   "title": "Economy of India"
+  },
+  "wik_0106": {
+   "text": "Indian Railways is a state-owned enterprise organised as a departmental undertaking of the Ministry of Railways of the Government of India and operates India's national railway system. As of 2024, it manages the fourth largest national railway system by size, with a track length of 135,207 km (84,014 mi), running track length of 109,748 km (68,194 mi) and route length of 69,181 km (42,987 mi), of which 66,820 km (41,520 mi) is 1,676 mm broad-gauge.",
+   "source": "https://en.wikipedia.org/wiki/Indian_Railways",
+   "kind": "prose",
+   "title": "Indian Railways"
+  },
+  "wik_0107": {
+   "text": "India is situated north of the equator between 8°4' north to 37°6' north latitude and 68°7' east to 97°25' east longitude. It is the seventh-largest country in the world, with a total area of 3,287,263 square kilometres (1,269,219 mi2).",
+   "source": "https://en.wikipedia.org/wiki/Geography_of_India",
+   "kind": "prose",
+   "title": "Geography of India"
+  },
+  "wik_0108": {
+   "text": "The  Andhra Pradesh Reorganisation Act, 2014, commonly known as the Telangana Act, is an Act of Indian Parliament that split the state of Andhra Pradesh into Telangana and the residuary Andhra Pradesh state, as an outcome of the Telangana movement. The Act defined the boundaries of the two states, determined how the assets and liabilities were to be divided, and laid out the status of Hyderabad as the permanent capital of the new Telangana state and temporary capital of the Andhra Pradesh state.",
+   "source": "https://en.wikipedia.org/wiki/Andhra_Pradesh_Reorganisation_Act%2C_2014",
+   "kind": "prose",
+   "title": "Andhra Pradesh Reorganisation Act, 2014"
+  }
+ }
+}

@@ -6,6 +6,7 @@ name: CI
 #   1. a test question leaked into the training data, so accuracy measured memory
 #   2. a regex escape collapsed silently, disabling an injection pattern
 #   3. a candidate was judged without a recorded baseline to beat
+#   4. the knowledge base asserted two different capitals for the same state
 #
 # Each now fails the build instead of shipping quietly.
 
@@ -147,10 +148,48 @@ jobs:
           print("checker correctly passed clean data")
           PY
 
+  knowledge-consistency:
+    name: knowledge base makes no contradictory claims
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+
+      # A retrieval store cannot resolve a contradiction. If it holds both
+      # "Bengaluru is the capital of Karnataka" and "Belgaum is the capital of
+      # Karnataka", whichever document ranks higher becomes the answer - so the
+      # system is right or wrong by accident, and the frozen suite still reports
+      # 100% because it asks about Karnataka exactly once. Both of those rows
+      # were really produced by the first Wikidata build.
+      - name: Validate the shipped knowledge base
+        run: |
+          PYTHONPATH=serve/src python -m serve.validate_kb serve/india_kb.json
+
+      # The file check above is not enough: queries hit the MERGED store - the
+      # hand-written seed corpus plus the KB - and a contradiction can span the
+      # two. This checks what is actually served.
+      - name: Validate the merged corpus that is actually queried
+        run: |
+          PYTHONPATH=serve/src python - <<'PY'
+          import sys
+          from serve.knowledge import CORPUS, KB_LOADED
+          from serve.validate_kb import validate
+          print(f"merged store: {len(CORPUS)} documents, {KB_LOADED} from the KB")
+          if KB_LOADED == 0:
+              sys.exit("KB did not load - retrieval would silently fall back to the seed corpus")
+          rep = validate(CORPUS)
+          for p in rep["problems"]:
+              print(f"  FAIL {p}")
+          if rep["problems"]:
+              sys.exit(f"{len(rep['problems'])} inconsistency(ies) in the served corpus")
+          print(f"clean: {rep['claims']} capital claims, no contradictions")
+          PY
+
   release-gate:
     name: release gate (step 8)
     runs-on: ubuntu-latest
-    needs: [tests, guard-integrity, test-isolation]
+    needs: [tests, guard-integrity, test-isolation, knowledge-consistency]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
