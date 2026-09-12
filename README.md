@@ -91,7 +91,7 @@ wrong output that no existing test was failing on:
 | Source defect | Effect if shipped |
 |---|---|
 | Dissolved entities carry stale capitals | *Hyderabad is the capital of Andhra Pradesh* — true until 2014, false now |
-| City query required only *in India, has a population* | 24 of 40 "cities" were states: *Karnataka is a major city in India, India* |
+| City query required only *in India, has a population* | 23 of 40 "cities" were states, regions or a demonym: *Karnataka is a major city in India, India* |
 | Karnataka has two capitals at equal rank, no qualifier | Two contradicting documents; retrieval answers by ranking luck |
 | Two population statements for one city | The store disagrees with itself about Vadodara |
 
