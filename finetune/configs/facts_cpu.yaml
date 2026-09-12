@@ -1,0 +1,41 @@
+# Teach the model a small set of checked facts, to fix the news app's wrong answers.
+#
+# This is MEMORISATION, deliberately. 22 facts x 40 repeats. It will make these
+# questions correct and will not generalise - the held-out block in
+# scripts/make_facts_dataset.py exists to measure exactly that gap.
+#
+# mix-ratio 0.3 blends in non-fact examples so the model does not forget how to do
+# anything else (catastrophic forgetting is the usual cost of narrow fine-tuning).
+name: facts_cpu
+base_model: HuggingFaceTB/SmolLM2-135M-Instruct
+
+lora:
+  r: 32                  # higher than 16: installing facts is a bigger change than style
+  alpha: 64
+  dropout: 0.0           # we WANT overfitting here; dropout fights it
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  train_embeddings: false
+
+data:
+  train_file: data_facts/train.jsonl
+  val_file: data_facts/val.jsonl
+  max_len: 256
+  on_overflow: drop
+  mask_prompt: true
+
+train:
+  out_dir: runs/facts
+  epochs: 1.0
+  micro_batch: 4
+  grad_accum: 4
+  lr: 2.0e-4
+  warmup_frac: 0.03
+  weight_decay: 0.0
+  grad_clip: 1.0
+  dtype: float32
+  device: cpu
+  num_threads: 4
+  log_every: 10
+  eval_every: 40
+  eval_batches: 8
+  save_every: 40

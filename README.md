@@ -6,6 +6,7 @@ number to be measured rather than assumed.
 
 | | |
 |---|---|
+| [`serve/`](serve) | The **serving layer** — safety guard, retrieval, abstention, release gate. |
 | [`mmllm/`](mmllm) | A multimodal LLM **pretrained from scratch** — architecture, tokenizer, streaming data pipeline, training loop. |
 | [`finetune/`](finetune) | **LoRA fine-tuning** of an existing model, with LoRA implemented directly rather than via `peft`. |
 
@@ -20,7 +21,7 @@ Not the model. It's 135M parameters trained for 60 steps and it is not good — 
 learned *format*, not knowledge, and on some prompts it degenerates into a
 repetition loop. That's documented honestly on the model card.
 
-The interesting part is the **76 tests**, because every one of them pins a failure
+The interesting part is the **117 tests**, because every one of them pins a failure
 mode that produces a *plausible-looking but wrong* run rather than a crash. Those
 are the only bugs worth spending laptop compute on.
 
@@ -38,6 +39,28 @@ are the only bugs worth spending laptop compute on.
 Ten real bugs were found this way during development. **Every one was silent.**
 
 ---
+
+## The result worth reading
+
+The same 20-case frozen suite, run against the raw model and against a serving
+pipeline wrapped around it. **Identical weights in both columns.**
+
+| Category | Raw model | With pipeline |
+|---|---|---|
+| injection | 33.3% | **100%** |
+| unanswerable (must abstain) | **0.0%** | **100%** |
+| geography | 50% | **100%** |
+| arithmetic | 75% | **100%** |
+| latency P95 | 35.31 s | **0.00 s** |
+| **overall** | **55.0%** | **100.0%** |
+| **release gate** | **BLOCK** | **PROMOTE** |
+
+No training involved. Each failure was fixed where it lives: injection by a check
+*before* the model, abstention by a retrieval threshold, arithmetic by a
+calculator, latency by not calling a model for most requests.
+
+`serve/SPEC.md` records the targets and the RAG-vs-fine-tune decision, written
+before any of it was measured.
 
 ## Quickstart
 
@@ -117,9 +140,14 @@ fine-tuning wins by roughly five orders of magnitude.
 ## Tests
 
 ```bash
-PYTHONPATH=mmllm/src python -m pytest mmllm/tests -q      # 38 tests
-PYTHONPATH=finetune/src python -m pytest finetune/tests -q # 38 tests
+PYTHONPATH=mmllm/src    python -m pytest mmllm/tests -q     # 34 tests
+PYTHONPATH=finetune/src python -m pytest finetune/tests -q  # 38 tests
+PYTHONPATH=serve/src    python -m pytest serve/tests -q     # 45 tests
 ```
+
+CI runs all three on every push, plus three checks that exist because each of
+these went wrong by hand during development — see
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 
 ## License
 

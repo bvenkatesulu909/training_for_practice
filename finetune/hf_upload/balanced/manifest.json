@@ -1,0 +1,39 @@
+{
+  "total": 2848,
+  "by_project": {
+    "scratchpad": 126,
+    "src": 400,
+    "Claude": 400,
+    "saas_agent": 269,
+    "docs": 248,
+    "k8s": 40,
+    "drying-plant-erp": 270,
+    "sap-abap-pr-approval": 98,
+    "cost-optimized-model-router": 98,
+    "tests": 125,
+    "adk_apps": 144,
+    "local-rag-dev": 291,
+    "tecoma_sales": 48,
+    "finetune": 110,
+    "mmllm": 65,
+    "crm-mcp": 19,
+    "examples": 27,
+    "scripts": 6,
+    ".github": 25,
+    "feature-flags": 6,
+    "Multi-Orchestration-agents": 33
+  },
+  "by_source": {
+    "markdown": 1540,
+    "python": 1180,
+    "abap": 71,
+    "sql": 34,
+    "js": 23
+  },
+  "dedup": {
+    "exact": 246,
+    "near": 203
+  },
+  "include_vendored": false,
+  "seed": 0
+}

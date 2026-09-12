@@ -55,7 +55,7 @@ train:
   seq_len: 512
   micro_batch: 4
   grad_accum: 8          # 16,384 tokens/step
-  max_steps: 6700        # ~110M tokens
+  max_steps: 500         # ~8.2M tokens - a completable run, see note above
   lr: 1.0e-3             # small models tolerate — and want — a high learning rate
   schedule: wsd
   warmup_frac: 0.01
